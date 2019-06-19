@@ -1,0 +1,1467 @@
+
+
+
+
+<!doctype html>
+<html lang="" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="">
+      
+        <meta name="lang:clipboard.copied" content="">
+      
+        <meta name="lang:search.language" content="">
+      
+        <meta name="lang:search.pipeline.stopwords" content="">
+      
+        <meta name="lang:search.pipeline.trimmer" content="">
+      
+        <meta name="lang:search.result.none" content="">
+      
+        <meta name="lang:search.result.one" content="">
+      
+        <meta name="lang:search.result.other" content="">
+      
+        <meta name="lang:search.tokenizer" content="">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Google Pay - RBKmoney|docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/override.css">
+    
+      <link rel="stylesheet" href="/docs/lightbox/css/lightbox.min.css">
+    
+      <link rel="stylesheet" href="/docs/payments/livedemo/livedemo.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#google-pay-rbkmoney-api" tabindex="1" class="md-skip">
+        
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="" title="RBKmoney|docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                RBKmoney|docs
+              </span>
+              <span class="md-header-nav__topic">
+                Google Pay
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/rbkmoney/docs/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    RBKmoney|docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/rbkmoney/docs/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Документация" class="md-nav__link">
+      Документация
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Интеграция
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Интеграция
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Payments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Payments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Обзор" class="md-nav__link">
+      Обзор
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../checkout/" title="Checkout" class="md-nav__link">
+      Checkout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tokenizer/" title="Tokenizer" class="md-nav__link">
+      Tokenizer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3dsecure/" title="3D-Secure" class="md-nav__link">
+      3D-Secure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../recurring/" title="Recurring" class="md-nav__link">
+      Recurring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../postman/" title="Postman" class="md-nav__link">
+      Postman
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Google Pay
+      </label>
+    
+    <a href="./" title="Google Pay" class="md-nav__link md-nav__link--active">
+      Google Pay
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Оглавление</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pay-with-google-pay" title="Пример интеграции кнопки "Pay with Google Pay"" class="md-nav__link">
+    Пример интеграции кнопки "Pay with Google Pay"
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-pay" title="Пример набора данных, возвращаемых Google Pay" class="md-nav__link">
+    Пример набора данных, возвращаемых Google Pay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-pay-rbkmoney-api_1" title="Интеграция Google Pay в RBKmoney API" class="md-nav__link">
+    Интеграция Google Pay в RBKmoney API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paymentresourse" title="Пример структуры paymentResourse" class="md-nav__link">
+    Пример структуры paymentResourse
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="Необходимые данные" class="md-nav__link">
+    Необходимые данные
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="Пример корректно заполненной структуры" class="md-nav__link">
+    Пример корректно заполненной структуры
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Собираем все вместе" class="md-nav__link">
+    Собираем все вместе
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../applepay/" title="Apple Pay" class="md-nav__link">
+      Apple Pay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-9" type="checkbox" id="nav-2-1-9">
+    
+    <label class="md-nav__link" for="nav-2-1-9">
+      Примеры
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-9">
+        Примеры
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/php-kkt-cart-webhooks/" title="PHP and Checkout" class="md-nav__link">
+      PHP and Checkout
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-10" type="checkbox" id="nav-2-1-10">
+    
+    <label class="md-nav__link" for="nav-2-1-10">
+      Модули CMS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-10">
+        Модули CMS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/bitrix/" title="Bitrix" class="md-nav__link">
+      Bitrix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/insales/" title="InSales" class="md-nav__link">
+      InSales
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/webasyst/" title="Webasyst/ShopScript" class="md-nav__link">
+      Webasyst/ShopScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/woocommerce/" title="Wordpress/Woocommerce" class="md-nav__link">
+      Wordpress/Woocommerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/wp-e-commerce/" title="Wordpress/E-commerce" class="md-nav__link">
+      Wordpress/E-commerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/opencart/" title="Opencart" class="md-nav__link">
+      Opencart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/netcat/" title="Netcat" class="md-nav__link">
+      Netcat
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/prestashop/" title="Prestashop" class="md-nav__link">
+      Prestashop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/ubercart/" title="Drupal/Ubercart" class="md-nav__link">
+      Drupal/Ubercart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/drupal-commerce/" title="Drupal/Commerce" class="md-nav__link">
+      Drupal/Commerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/magento/" title="Magento" class="md-nav__link">
+      Magento
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/virtuemart/" title="Joomla/Virtuemart" class="md-nav__link">
+      Joomla/Virtuemart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Wallets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Wallets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wallets/overview/" title="Обзор" class="md-nav__link">
+      Обзор
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wallets/usage/" title="Работа с кошельками" class="md-nav__link">
+      Работа с кошельками
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wallets/card-payouts/" title="Выплаты на карты" class="md-nav__link">
+      Выплаты на карты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Справочники
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Справочники
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../refs/testcards/" title="Тестовые карты" class="md-nav__link">
+      Тестовые карты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+    
+  
+  	<li class="md-nav__item">
+		<a href="https://developer.rbk.money/api/" title="Payments API" class="md-nav__link" target="_blank">
+			Payments API
+		</a>
+	</li>
+  
+  	<li class="md-nav__item">
+		<a href="https://rbkmoney.github.io/wallets-api/v0/" title="Wallets API" class="md-nav__link" target="_blank">
+			Wallets API
+		</a>
+	</li>
+  
+  	<li class="md-nav__item">
+		<a href="https://rbkmoney.github.io/wallets-api/v0/?api/privdoc/swagger.json" title="Identity Storage API" class="md-nav__link" target="_blank">
+			Identity Storage API
+		</a>
+	</li>
+  
+
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Оглавление</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pay-with-google-pay" title="Пример интеграции кнопки "Pay with Google Pay"" class="md-nav__link">
+    Пример интеграции кнопки "Pay with Google Pay"
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-pay" title="Пример набора данных, возвращаемых Google Pay" class="md-nav__link">
+    Пример набора данных, возвращаемых Google Pay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-pay-rbkmoney-api_1" title="Интеграция Google Pay в RBKmoney API" class="md-nav__link">
+    Интеграция Google Pay в RBKmoney API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paymentresourse" title="Пример структуры paymentResourse" class="md-nav__link">
+    Пример структуры paymentResourse
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="Необходимые данные" class="md-nav__link">
+    Необходимые данные
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="Пример корректно заполненной структуры" class="md-nav__link">
+    Пример корректно заполненной структуры
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Собираем все вместе" class="md-nav__link">
+    Собираем все вместе
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rbkmoney/docs/edit/master/docs/docs/payments/googlepay/index.md" title="Редактировать эту страницу" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="google-pay-rbkmoney-api">Интеграция Google Pay в RBKmoney API<a class="headerlink" href="#google-pay-rbkmoney-api" title="Permanent link">&para;</a></h1>
+<p>Google Pay — это метод токенизации карточных данных плательщика, который позволяет ускорить и упростить оплату ваших товаров и услуг. В случае, если у плательщика добавлена карта в приложении Google Pay, он может оплачивать покупки, вводя не свои карточные данные, а используя кнопку &ldquo;Покупка с Google Pay&rdquo;. </p>
+<p>Для проведения платежа достаточно передать полученные из Google Pay токенизированные карточные данные в RBKmoney API, создать инвойс в Платформе и оплатить его с помощью токена RBKmoney, который содержит в себе токен Google Pay. Таким образом, при оплате производится процесс двойной токенизации - Платформа RBKmoney реализует в схожую бизнес-логику при проведении платежей, создавая на основе платежных данных токены, которые используются для запуска платежей.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Данная инструкция предназначена для тех, кто подключается как платежный процессинг, либо предпочитает верстать свою собственную платежную форму. Если вы используете <a href="/docs/payments/checkout/">RBKmoney Checkout</a>, то кнопка Google Pay уже включена для ваших плательщиков, никаких дополнительных действий не требуется. Ознакомиться с условиями оказания услуг Google Pay вы можете по адресу <a href="https://pay.google.com/about/terms/">https://pay.google.com/about/terms/</a>.</p>
+</div>
+<h2 id="pay-with-google-pay">Пример интеграции кнопки &ldquo;Pay with Google Pay&rdquo;<a class="headerlink" href="#pay-with-google-pay" title="Permanent link">&para;</a></h2>
+<p>На момент написания статьи используется официальная документация разработчика Google по адресу <a href="https://developers.google.com/pay/api/web/guides/tutorial">https://developers.google.com/pay/api/web/guides/tutorial</a>, а также гайдлайны фирменного стиля Google, описанные по адресу <a href="https://developers.google.com/pay/api/web/guides/brand-guidelines">https://developers.google.com/pay/api/web/guides/brand-guidelines</a>.</p>
+<p>В качестве параметров скрипта укажите:</p>
+<ul>
+<li>доступные методы платежа:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">allowedPaymentMethods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;CARD&#39;</span><span class="p">,</span> <span class="s1">&#39;TOKENIZED_CARD&#39;</span><span class="p">];</span>
+</pre></div>
+
+
+<ul>
+<li>тип токенизации - <code>PAYMENT_GATEWAY</code>:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="nx">tokenizationType</span><span class="o">:</span> <span class="s1">&#39;PAYMENT_GATEWAY&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>для тестового окружения укажите значения <code>gateway</code> как <code>rbkmoney</code> и <code>gatewayMerchantId</code> как <code>rbkmoney-test</code>:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="s1">&#39;gateway&#39;</span><span class="o">:</span> <span class="s1">&#39;rbkmoney&#39;</span><span class="p">,</span>
+<span class="s1">&#39;gatewayMerchantId&#39;</span><span class="o">:</span> <span class="s1">&#39;rbkmoney-test&#39;</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Указанный gatewayMerchantId используется для тестов. Для получения боевого gatewayMerchantId <a href="mailto:support@rbk.money">обратитесь к нам</a>.</p>
+</div>
+<p>Если вы все сделали правильно, то у вас на сайте появится такая кнопка:</p>
+<p><div id="container"></div></p>
+<script>
+/**
+ * Payment methods accepted by your gateway
+ *
+ * @todo confirm support for both payment methods with your gateway
+ */
+var allowedPaymentMethods = ['CARD', 'TOKENIZED_CARD'];
+
+/**
+ * Card networks supported by your site and your gateway
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/object#CardRequirements|CardRequirements}
+ * @todo confirm card networks supported by your site and gateway
+ */
+var allowedCardNetworks = ['MASTERCARD', 'VISA'];
+
+/**
+ * Identify your gateway and your site's gateway merchant identifier
+ *
+ * The Google Pay API response will return an encrypted payment method capable of
+ * being charged by a supported gateway after shopper authorization
+ *
+ * @todo check with your gateway on the parameters to pass
+ * @see {@link https://developers.google.com/pay/api/web/reference/object#Gateway|PaymentMethodTokenizationParameters}
+ */
+var tokenizationParameters = {
+  tokenizationType: 'PAYMENT_GATEWAY',
+  parameters: {
+    'gateway': 'rbkmoney',
+    'gatewayMerchantId': 'rbkmoney-test'
+  }
+}
+
+/**
+ * Initialize a Google Pay API client
+ *
+ * @returns {google.payments.api.PaymentsClient} Google Pay API client
+ */
+function getGooglePaymentsClient() {
+  return (new google.payments.api.PaymentsClient({environment: 'TEST'}));
+}
+
+/**
+ * Initialize Google PaymentsClient after Google-hosted JavaScript has loaded
+ */
+function onGooglePayLoaded() {
+  var paymentsClient = getGooglePaymentsClient();
+  paymentsClient.isReadyToPay({allowedPaymentMethods: allowedPaymentMethods})
+      .then(function(response) {
+        if (response.result) {
+          addGooglePayButton();
+          prefetchGooglePaymentData();
+        }
+      })
+      .catch(function(err) {
+        // show error in developer console for debugging
+        console.error(err);
+      });
+}
+
+/**
+ * Add a Google Pay purchase button alongside an existing checkout button
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/object#ButtonOptions|Button options}
+ * @see {@link https://developers.google.com/pay/api/web/guides/brand-guidelines|Google Pay brand guidelines}
+ */
+function addGooglePayButton() {
+  var paymentsClient = getGooglePaymentsClient();
+  var button = paymentsClient.createButton({onClick:onGooglePaymentButtonClicked});
+  document.getElementById('container').appendChild(button);
+}
+
+/**
+ * Configure support for the Google Pay API
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/object#PaymentDataRequest|PaymentDataRequest}
+ * @returns {object} PaymentDataRequest fields
+ */
+function getGooglePaymentDataConfiguration() {
+  return {
+    // @todo a merchant ID is available for a production environment after approval by Google
+    // @see {@link https://developers.google.com/pay/api/web/guides/test-and-deploy/integration-checklist|Integration checklist}
+    merchantId: '01234567890123456789',
+    paymentMethodTokenizationParameters: tokenizationParameters,
+    allowedPaymentMethods: allowedPaymentMethods,
+    cardRequirements: {
+      allowedCardNetworks: allowedCardNetworks
+    }
+  };
+}
+
+/**
+ * Provide Google Pay API with a payment amount, currency, and amount status
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/object#TransactionInfo|TransactionInfo}
+ * @returns {object} transaction info, suitable for use as transactionInfo property of PaymentDataRequest
+ */
+function getGoogleTransactionInfo() {
+  return {
+    currencyCode: 'RUB',
+    totalPriceStatus: 'FINAL',
+    // set to cart total
+    totalPrice: '10.00'
+  };
+}
+
+/**
+ * Prefetch payment data to improve performance
+ */
+function prefetchGooglePaymentData() {
+  var paymentDataRequest = getGooglePaymentDataConfiguration();
+  // transactionInfo must be set but does not affect cache
+  paymentDataRequest.transactionInfo = {
+    totalPriceStatus: 'NOT_CURRENTLY_KNOWN',
+    currencyCode: 'RUB'
+  };
+  var paymentsClient = getGooglePaymentsClient();
+  paymentsClient.prefetchPaymentData(paymentDataRequest);
+}
+
+/**
+ * Show Google Pay chooser when Google Pay purchase button is clicked
+ */
+function onGooglePaymentButtonClicked() {
+  var paymentDataRequest = getGooglePaymentDataConfiguration();
+  paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
+
+  var paymentsClient = getGooglePaymentsClient();
+  paymentsClient.loadPaymentData(paymentDataRequest)
+      .then(function(paymentData) {
+        // handle the response
+        processPayment(paymentData);
+      })
+      .catch(function(err) {
+        // show error in developer console for debugging
+        console.error(err);
+      });
+}
+
+/**
+ * Process payment data returned by the Google Pay API
+ *
+ * @param {object} paymentData response from Google Pay API after shopper approves payment
+ * @see {@link https://developers.google.com/pay/api/web/reference/object#PaymentData|PaymentData object reference}
+ */
+function processPayment(paymentData) {
+  // show returned data in developer console for debugging
+  console.log(JSON.stringify(paymentData));
+  // @todo pass payment data response to gateway to process payment
+}
+</script>
+
+<script async
+  src="https://pay.google.com/gp/p/js/pay.js"
+  onload="onGooglePayLoaded()"></script>
+
+<p>После нажатия кнопки на устройстве с подключенным Google Pay появится всплывающее окно или форма выбора привязанной карты. В случае подтверждения плательщиком оплаты коллбек вернет в функцию <code>processPayment</code> данные, необходимые для получения <a href="https://developer.rbk.money/api/#operation/createPaymentResource">платежного токена</a> RBKmoney.</p>
+<h2 id="google-pay">Пример набора данных, возвращаемых Google Pay<a class="headerlink" href="#google-pay" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;cardInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;cardNetwork&quot;</span><span class="p">:</span> <span class="s2">&quot;MASTERCARD&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;cardDetails&quot;</span><span class="p">:</span> <span class="s2">&quot;4444&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;cardImageUri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://lh6.ggpht.com/h6TBIVV7tlYGr1zkIA8CmCzINizzASbPIetpxh_5otBu3VkPEC5_Kk_wH5szy7gDhMkRhVVp&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;cardDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Mastercard •••• 4444&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;cardClass&quot;</span><span class="p">:</span> <span class="s2">&quot;CREDIT&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;paymentMethodToken&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;tokenizationType&quot;</span><span class="p">:</span> <span class="s2">&quot;PAYMENT_GATEWAY&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;{\&quot;signature\&quot;:\&quot;MEUCIZ29vZ2xlIHBheSBkZWNvZGVkIHNpZ25hdHVyZSBkYXRhIChiaW5hcnkpCg\\u003d\&quot;,\&quot;protocolVersion\&quot;:\&quot;ECv1\&quot;,\&quot;signedMessage\&quot;:\&quot;{\\\&quot;encryptedMessage\\\&quot;:\\\&quot;TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdCwg//c2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu//YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0//aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1YXQuCg\\\&quot;,\\\&quot;ephemeralPublicKey\\\&quot;:\\\&quot;Z29vZ2xlIHBheSBlbXBoZXJhbCBwdWJsaWMga2V5IChkZWNvZGVkIGJpbmFyeSkK\\\\u003d\\\&quot;,\\\&quot;tag\\\&quot;:\\\&quot;Z29vZ2xlIHBheSB0YWcgKGRlY29kZWQgYmluYXJ5KQo\\\\u003d\\\&quot;}\&quot;}&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Встроенный в эту документацию скрипт логгирует данные Google Pay в консоль вашего браузера. Вы можете просмотреть их и использовать для тестовых нужд. 
+Обратите внимание! В Google Pay отсутствует возможность привязать тестовую карту, поэтому интерфейс вам будет показывать вашу реальную карту. Однако в тестовой среде Google эта карта непрозрачно подменяется на тестовую и вам в скрипт возвращаются данные тестовой карты. Таким образом вы можете безопасно использовать вашу привязанную реальную карту, средства с нее списаны не будут.</p>
+</div>
+<h2 id="google-pay-rbkmoney-api_1">Интеграция Google Pay в RBKmoney API<a class="headerlink" href="#google-pay-rbkmoney-api_1" title="Permanent link">&para;</a></h2>
+<p>Для проведения платежа с Google Pay необходимо выполнить следующие вызовы RBKmoney API:</p>
+<ul>
+<li>создать в Платформе инвойс, вызвав метод <a href="https://developer.rbk.money/api/#operation/createInvoice">createInvoice()</a>;</li>
+<li>либо, если инвойс уже был создан ранее, создать <a href="https://developer.rbk.money/api/#operation/createInvoiceAccessToken">invoiceAccessToken</a>;</li>
+<li>используя полученный <code>invoiceAccessToken</code> создать платежный токен RBKmoney, вызывав метод <a href="https://developer.rbk.money/api/#operation/createPaymentResource">createPaymentResource()</a>;</li>
+<li>использовать полученный платежный токен RBKmoney для запуска одно- или двустадийных платежей.</li>
+</ul>
+<h3 id="paymentresourse">Пример структуры <a href="https://developer.rbk.money/api/#operation/createPaymentResource">paymentResourse</a><a class="headerlink" href="#paymentresourse" title="Permanent link">&para;</a></h3>
+<h4 id="_1">Необходимые данные<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>в переменной <code>paymentToolType</code> укажите значение <code>TokenizedCardData</code>;</li>
+<li>в переменной <code>provider</code> укажите <code>GooglePay</code>;</li>
+<li>в переменной <code>gatewayMerchantID</code>:<ul>
+<li>для тестовой среды укажите <code>rbkmoney-test</code>;</li>
+<li>для боевой среды укажите идентификатор вашего мерчанта, выданный вам RBKmoney.</li>
+</ul>
+</li>
+<li>в структуру <code>paymentToken</code> передайте структуру, полученную из Google Pay.</li>
+</ul>
+<h4 id="_2">Пример корректно заполненной структуры<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;paymentTool&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;paymentToolType&quot;</span><span class="p">:</span> <span class="s2">&quot;TokenizedCardData&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;provider&quot;</span><span class="p">:</span> <span class="s2">&quot;GooglePay&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gatewayMerchantID&quot;</span><span class="p">:</span> <span class="s2">&quot;rbkmoney-test&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;paymentToken&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;cardInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;cardNetwork&quot;</span><span class="p">:</span> <span class="s2">&quot;MASTERCARD&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;cardDetails&quot;</span><span class="p">:</span> <span class="s2">&quot;4444&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;cardImageUri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://lh6.ggpht.com/h6TBIVV7tlYGr1zkIA8CmCzINizzASbPIetpxh_5otBu3VkPEC5_Kk_wH5szy7gDhMkRhVVp&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;cardDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Mastercard •••• 4444&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;cardClass&quot;</span><span class="p">:</span> <span class="s2">&quot;CREDIT&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;paymentMethodToken&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;tokenizationType&quot;</span><span class="p">:</span> <span class="s2">&quot;PAYMENT_GATEWAY&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;{\&quot;signature\&quot;:\&quot;MEUCIZ29vZ2xlIHBheSBkZWNvZGVkIHNpZ25hdHVyZSBkYXRhIChiaW5hcnkpCg\\u003d\&quot;,\&quot;protocolVersion\&quot;:\&quot;ECv1\&quot;,\&quot;signedMessage\&quot;:\&quot;{\\\&quot;encryptedMessage\\\&quot;:\\\&quot;TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdCwg//c2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu//YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0//aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1YXQuCg\\\&quot;,\\\&quot;ephemeralPublicKey\\\&quot;:\\\&quot;Z29vZ2xlIHBheSBlbXBoZXJhbCBwdWJsaWMga2V5IChkZWNvZGVkIGJpbmFyeSkK\\\\u003d\\\&quot;,\\\&quot;tag\\\&quot;:\\\&quot;Z29vZ2xlIHBheSB0YWcgKGRlY29kZWQgYmluYXJ5KQo\\\\u003d\\\&quot;}\&quot;}&quot;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;clientInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;aa32fec9f377e6fae19a6a8bcde41bd1&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="_3">Собираем все вместе<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>Ниже приведена цепочка <code>curl</code> вызовов к API RBKmoney, позволяющая провести платеж с использованием платежного метода Google Pay.</p>
+<ul>
+<li>создаем в Платформе инвойс:</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {YOUR_API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1528470572&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;shopID&quot;: &quot;TEST&quot;,</span>
+<span class="s1">  &quot;dueDate&quot;: &quot;2018-06-08T14:56:31.416Z&quot;,</span>
+<span class="s1">  &quot;amount&quot;: 6000,</span>
+<span class="s1">  &quot;currency&quot;: &quot;RUB&quot;,</span>
+<span class="s1">  &quot;product&quot;: &quot;Order num 12345&quot;,</span>
+<span class="s1">  &quot;description&quot;: &quot;Delicious meals&quot;,</span>
+<span class="s1">    &quot;cart&quot;: [</span>
+<span class="s1">        {</span>
+<span class="s1">            &quot;price&quot;: 5000,</span>
+<span class="s1">            &quot;product&quot;: &quot;Sandwich&quot;,</span>
+<span class="s1">            &quot;quantity&quot;: 1,</span>
+<span class="s1">            &quot;taxMode&quot;: {</span>
+<span class="s1">                &quot;rate&quot;: &quot;10%&quot;,</span>
+<span class="s1">                &quot;type&quot;: &quot;InvoiceLineTaxVAT&quot;</span>
+<span class="s1">            }</span>
+<span class="s1">        },</span>
+<span class="s1">        {</span>
+<span class="s1">            &quot;price&quot;: 1000,</span>
+<span class="s1">            &quot;product&quot;: &quot;Cola&quot;,</span>
+<span class="s1">            &quot;quantity&quot;: 1,</span>
+<span class="s1">            &quot;taxMode&quot;: {</span>
+<span class="s1">                &quot;rate&quot;: &quot;18%&quot;,</span>
+<span class="s1">                &quot;type&quot;: &quot;InvoiceLineTaxVAT&quot;</span>
+<span class="s1">            }</span>
+<span class="s1">        }</span>
+<span class="s1">    ],  </span>
+<span class="s1">&quot;metadata&quot;: </span>
+<span class="s1">  { </span>
+<span class="s1">    &quot;order_id&quot;: &quot;Internal order num 13123298761&quot;</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>пример ответа Платформы:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;invoice&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">6000</span><span class="p">,</span>
+        <span class="nt">&quot;cart&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">,</span>
+                <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">,</span>
+                <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Sandwich&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;taxMode&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="s2">&quot;10%&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;InvoiceLineTaxVAT&quot;</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+                <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+                <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Cola&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;taxMode&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="s2">&quot;18%&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;InvoiceLineTaxVAT&quot;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-06-08T13:56:31.188182Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Delicious meals&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;dueDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-06-08T14:56:31.416000Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;10vLw0XY144&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;order_id&quot;</span><span class="p">:</span> <span class="s2">&quot;Internal order num 13123298761&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Order num 12345&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shopID&quot;</span><span class="p">:</span> <span class="s2">&quot;TEST&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;unpaid&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;invoiceAccessToken&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;payload&quot;</span><span class="p">:</span> <span class="s2">&quot;{INVOICE_ACCESS_TOKEN}&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>обрабатываем в UA плательщика бизнес-процесс Google Pay, передаем полученные данные себе на бекэнд и вызываем createPaymentResource():</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/payment-resources <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {INVOICE_ACCESS_TOKEN}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1528470722&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;paymentTool&quot;: {</span>
+<span class="s1">    &quot;paymentToolType&quot;: &quot;TokenizedCardData&quot;,</span>
+<span class="s1">    &quot;provider&quot;: &quot;GooglePay&quot;,</span>
+<span class="s1">    &quot;gatewayMerchantID&quot;: &quot;rbkmoney-test&quot;,</span>
+<span class="s1">    &quot;paymentToken&quot;: {</span>
+<span class="s1">      &quot;cardInfo&quot;: {</span>
+<span class="s1">        &quot;cardNetwork&quot;: &quot;MASTERCARD&quot;,</span>
+<span class="s1">        &quot;cardDetails&quot;: &quot;4444&quot;,</span>
+<span class="s1">        &quot;cardImageUri&quot;: &quot;https://lh6.ggpht.com/h6TBIVV7tlYGr1zkIA8CmCzINizzASbPIetpxh_5otBu3VkPEC5_Kk_wH5szy7gDhMkRhVVp&quot;,</span>
+<span class="s1">        &quot;cardDescription&quot;: &quot;Mastercard •••• 4444&quot;,</span>
+<span class="s1">        &quot;cardClass&quot;: &quot;CREDIT&quot;</span>
+<span class="s1">      },</span>
+<span class="s1">      &quot;paymentMethodToken&quot;: {</span>
+<span class="s1">        &quot;tokenizationType&quot;: &quot;PAYMENT_GATEWAY&quot;,</span>
+<span class="s1">        &quot;token&quot;: &quot;{\&quot;signature\&quot;:\&quot;MEUCIZ29vZ2xlIHBheSBkZWNvZGVkIHNpZ25hdHVyZSBkYXRhIChiaW5hcnkpCg\\u003d\&quot;,\&quot;protocolVersion\&quot;:\&quot;ECv1\&quot;,\&quot;signedMessage\&quot;:\&quot;{\\\&quot;encryptedMessage\\\&quot;:\\\&quot;TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdCwg//c2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu//YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0//aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1YXQuCg\\\&quot;,\\\&quot;ephemeralPublicKey\\\&quot;:\\\&quot;Z29vZ2xlIHBheSBlbXBoZXJhbCBwdWJsaWMga2V5IChkZWNvZGVkIGJpbmFyeSkK\\\\u003d\\\&quot;,\\\&quot;tag\\\&quot;:\\\&quot;Z29vZ2xlIHBheSB0YWcgKGRlY29kZWQgYmluYXJ5KQo\\\\u003d\\\&quot;}\&quot;}&quot;</span>
+<span class="s1">      }</span>
+<span class="s1">    }</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;clientInfo&quot;: {</span>
+<span class="s1">    &quot;fingerprint&quot;: &quot;aa32fec9f377e6fae19a6a8bcde41bd1&quot;</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>пример ответа Платформы:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;clientInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;aa32fec9f377e6fae19a6a8bcde41bd1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ip&quot;</span><span class="p">:</span> <span class="s2">&quot;2A04:4A00:5:1014::100D&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;paymentSession&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_SESSION}&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;paymentToolDetails&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;bin&quot;</span><span class="p">:</span> <span class="s2">&quot;411111&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;cardNumberMask&quot;</span><span class="p">:</span> <span class="s2">&quot;411111******4444&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;detailsType&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentToolDetailsBankCard&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;lastDigits&quot;</span><span class="p">:</span> <span class="s2">&quot;4444&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paymentSystem&quot;</span><span class="p">:</span> <span class="s2">&quot;mastercard&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;tokenProvider&quot;</span><span class="p">:</span> <span class="s2">&quot;googlepay&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;paymentToolToken&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_TOOL_TOKEN}&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>запускаем платеж в Платформе</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices/10vLw0XY144/payments <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {INVOICE_ACCESS_TOKEN}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1528470852&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;flow&quot;: {</span>
+<span class="s1">    &quot;type&quot;: &quot;PaymentFlowInstant&quot;</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;payer&quot;: {</span>
+<span class="s1">      &quot;payerType&quot;: &quot;PaymentResourcePayer&quot;,</span>
+<span class="s1">    &quot;paymentToolToken&quot;:&quot;{PAYMENT_TOOL_TOKEN}&quot;,</span>
+<span class="s1">    &quot;paymentSession&quot;:&quot;{PAYMENT_SESSION}&quot;,</span>
+<span class="s1">    &quot;contactInfo&quot;:</span>
+<span class="s1">      {</span>
+<span class="s1">        &quot;email&quot;:&quot;test@test.com&quot;,</span>
+<span class="s1">        &quot;phoneNumber&quot;:&quot;9876543210&quot;</span>
+<span class="s1">      }</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>проверяем статус обработки платежа:</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X GET <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices/10vRl9xqGlk/docs/payments/1 <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {YOUR_API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1528471100&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>пример ответа Платформы. Платеж успешно проведен:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">6000</span><span class="p">,</span>
+    <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-06-08T15:18:06.834793Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;flow&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentFlowInstant&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;invoiceID&quot;</span><span class="p">:</span> <span class="s2">&quot;10vRl9xqGlk&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;payer&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;clientInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;aa32fec9f377e6fae19a6a8bcde41bd1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;ip&quot;</span><span class="p">:</span> <span class="s2">&quot;2A04:4A00:5:1014::100D&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;contactInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;test@test.com&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;9876543210&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;payerType&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentResourcePayer&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paymentSession&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_SESSION}&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paymentToolDetails&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;bin&quot;</span><span class="p">:</span> <span class="s2">&quot;411111&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;cardNumberMask&quot;</span><span class="p">:</span> <span class="s2">&quot;411111******4444&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;detailsType&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentToolDetailsBankCard&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;lastDigits&quot;</span><span class="p">:</span> <span class="s2">&quot;4444&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;paymentSystem&quot;</span><span class="p">:</span> <span class="s2">&quot;mastercard&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;tokenProvider&quot;</span><span class="p">:</span> <span class="s2">&quot;googlepay&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;paymentToolToken&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_TOOL_TOKEN}&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;captured&quot;</span>
+<span class="p">}</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../postman/" title="Postman" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Ранее
+                </span>
+                Postman
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../applepay/" title="Apple Pay" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Далее
+                </span>
+                Apple Pay
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+      
+        <script src="https://checkout.rbk.money/checkout.js"></script>
+      
+        <script src="/docs/payments/livedemo/livedemo.js"></script>
+      
+        <script src="/docs/lightbox/js/lightbox.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1583 @@
+
+
+
+
+<!doctype html>
+<html lang="" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="">
+      
+        <meta name="lang:clipboard.copied" content="">
+      
+        <meta name="lang:search.language" content="">
+      
+        <meta name="lang:search.pipeline.stopwords" content="">
+      
+        <meta name="lang:search.pipeline.trimmer" content="">
+      
+        <meta name="lang:search.result.none" content="">
+      
+        <meta name="lang:search.result.one" content="">
+      
+        <meta name="lang:search.result.other" content="">
+      
+        <meta name="lang:search.tokenizer" content="">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Recurring - RBKmoney|docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/override.css">
+    
+      <link rel="stylesheet" href="/docs/lightbox/css/lightbox.min.css">
+    
+      <link rel="stylesheet" href="/docs/payments/livedemo/livedemo.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="" title="RBKmoney|docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                RBKmoney|docs
+              </span>
+              <span class="md-header-nav__topic">
+                Recurring
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/rbkmoney/docs/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    RBKmoney|docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/rbkmoney/docs/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Документация" class="md-nav__link">
+      Документация
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Интеграция
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Интеграция
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Payments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Payments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Обзор" class="md-nav__link">
+      Обзор
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../checkout/" title="Checkout" class="md-nav__link">
+      Checkout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tokenizer/" title="Tokenizer" class="md-nav__link">
+      Tokenizer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3dsecure/" title="3D-Secure" class="md-nav__link">
+      3D-Secure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Recurring
+      </label>
+    
+    <a href="./" title="Recurring" class="md-nav__link md-nav__link--active">
+      Recurring
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Оглавление</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Правила и ограничения" class="md-nav__link">
+    Правила и ограничения
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="Рекуррентные списания по первому платежу" class="md-nav__link">
+    Рекуррентные списания по первому платежу
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkout" title="Интеграция без использования Checkout" class="md-nav__link">
+    Интеграция без использования Checkout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-checkout" title="Интеграция c использованием Checkout" class="md-nav__link">
+    Интеграция c использованием Checkout
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="Рекуррентные платежи по привязанной карте" class="md-nav__link">
+    Рекуррентные платежи по привязанной карте
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="Привязка карт и плательщики" class="md-nav__link">
+    Привязка карт и плательщики
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rbkmoney-checkout" title="Пример реализации с RBKmoney Checkout" class="md-nav__link">
+    Пример реализации с RBKmoney Checkout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Реализация с собственной платежной формой" class="md-nav__link">
+    Реализация с собственной платежной формой
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../postman/" title="Postman" class="md-nav__link">
+      Postman
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../googlepay/" title="Google Pay" class="md-nav__link">
+      Google Pay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../applepay/" title="Apple Pay" class="md-nav__link">
+      Apple Pay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-9" type="checkbox" id="nav-2-1-9">
+    
+    <label class="md-nav__link" for="nav-2-1-9">
+      Примеры
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-9">
+        Примеры
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/php-kkt-cart-webhooks/" title="PHP and Checkout" class="md-nav__link">
+      PHP and Checkout
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-10" type="checkbox" id="nav-2-1-10">
+    
+    <label class="md-nav__link" for="nav-2-1-10">
+      Модули CMS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-10">
+        Модули CMS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/bitrix/" title="Bitrix" class="md-nav__link">
+      Bitrix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/insales/" title="InSales" class="md-nav__link">
+      InSales
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/webasyst/" title="Webasyst/ShopScript" class="md-nav__link">
+      Webasyst/ShopScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/woocommerce/" title="Wordpress/Woocommerce" class="md-nav__link">
+      Wordpress/Woocommerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/wp-e-commerce/" title="Wordpress/E-commerce" class="md-nav__link">
+      Wordpress/E-commerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/opencart/" title="Opencart" class="md-nav__link">
+      Opencart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/netcat/" title="Netcat" class="md-nav__link">
+      Netcat
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/prestashop/" title="Prestashop" class="md-nav__link">
+      Prestashop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/ubercart/" title="Drupal/Ubercart" class="md-nav__link">
+      Drupal/Ubercart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/drupal-commerce/" title="Drupal/Commerce" class="md-nav__link">
+      Drupal/Commerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/magento/" title="Magento" class="md-nav__link">
+      Magento
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/virtuemart/" title="Joomla/Virtuemart" class="md-nav__link">
+      Joomla/Virtuemart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Wallets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Wallets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wallets/overview/" title="Обзор" class="md-nav__link">
+      Обзор
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wallets/usage/" title="Работа с кошельками" class="md-nav__link">
+      Работа с кошельками
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wallets/card-payouts/" title="Выплаты на карты" class="md-nav__link">
+      Выплаты на карты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Справочники
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Справочники
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../refs/testcards/" title="Тестовые карты" class="md-nav__link">
+      Тестовые карты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+    
+  
+  	<li class="md-nav__item">
+		<a href="https://developer.rbk.money/api/" title="Payments API" class="md-nav__link" target="_blank">
+			Payments API
+		</a>
+	</li>
+  
+  	<li class="md-nav__item">
+		<a href="https://rbkmoney.github.io/wallets-api/v0/" title="Wallets API" class="md-nav__link" target="_blank">
+			Wallets API
+		</a>
+	</li>
+  
+  	<li class="md-nav__item">
+		<a href="https://rbkmoney.github.io/wallets-api/v0/?api/privdoc/swagger.json" title="Identity Storage API" class="md-nav__link" target="_blank">
+			Identity Storage API
+		</a>
+	</li>
+  
+
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Оглавление</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Правила и ограничения" class="md-nav__link">
+    Правила и ограничения
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="Рекуррентные списания по первому платежу" class="md-nav__link">
+    Рекуррентные списания по первому платежу
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkout" title="Интеграция без использования Checkout" class="md-nav__link">
+    Интеграция без использования Checkout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-checkout" title="Интеграция c использованием Checkout" class="md-nav__link">
+    Интеграция c использованием Checkout
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="Рекуррентные платежи по привязанной карте" class="md-nav__link">
+    Рекуррентные платежи по привязанной карте
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="Привязка карт и плательщики" class="md-nav__link">
+    Привязка карт и плательщики
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rbkmoney-checkout" title="Пример реализации с RBKmoney Checkout" class="md-nav__link">
+    Пример реализации с RBKmoney Checkout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Реализация с собственной платежной формой" class="md-nav__link">
+    Реализация с собственной платежной формой
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rbkmoney/docs/edit/master/docs/docs/payments/recurring.md" title="Редактировать эту страницу" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Recurring</h1>
+                
+                <p>Рекуррентные платежи, также известные как безакцептные списания, автоплатежи или регулярные платежи позволяют вам делать списания с карты плательщика без его участия и отображения формы ввода карточных данных.</p>
+<p>Однако для того, чтобы такие платежи заработали необходимо произвести первый платеж с участием плательщика, показав ему форму ввода карточных данных.</p>
+<p>Платформа предоставляет несколько решений для организации безакцептных списаний - непрозрачные для плательщика, когда первый успешный платеж используется как родительский для последующих фоновых списаний и прозрачные, когда плательщику явным образом предлагается привязать карту для последующих списаний.</p>
+<p>На момент написания текущей версии статьи сервисы <a href="https://developer.visa.com/capabilities/vau/docs">VAU</a>/<a href="https://developer.mastercard.com/product/automatic-billing-updater">ABU</a> платформой не обслуживаются, предоставляется только возможность безакцептного списания средств с карт плательщиков.</p>
+<h2 id="_1">Правила и ограничения<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>плательщик должен явно согласиться с предоставлением своей карты для последующих рекуррентных платежей;</li>
+<li>в информационном уведомлении (чеке) о платеже должно указываться:<ul>
+<li>пометка &ldquo;recurring transaction&rdquo; (&ldquo;периодическая операция&rdquo;, &ldquo;транзакция на основании постоянного поручения&rdquo;);</li>
+<li>расписание платежа (по какому графику производятся регулярные списания);</li>
+<li>время жизни подписки (до какого срока плательщик дал согласие на оплату).</li>
+</ul>
+</li>
+<li>в случае получения ошибки рекуррентного платежа создание повторных попыток списания допускается не чаще 1 раза в сутки на протяжении не более 31 дней.</li>
+</ul>
+<h2 id="_2">Рекуррентные списания по первому платежу<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Перед началом использования фоновых безакцепнтых списаний с вашего бекэнда, необходимо произвести первый инициирующий платеж, а также уведомить плательщика, что данная карта будет использоваться для регулярных платежей в дальнейшем.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Необходимо явным образом получить согласие плательщика на последующие фоновые списания размещением соответствующего поля для установки флажка (checkbox) с согласием. При необходимости нужно иметь возможность предоставить данные, подтверждающие отметку этого флажка плательщиком.</p>
+</div>
+<p>В дальнейшем идентификаторы успешных родительских инвойса и платежа достаточно будет передавать параметрами в функцию создания нового платежа.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>В связи с рекомендациями международных платежных систем не делать перерыва более 6 месяцев между двумя рекуррентными платежами, мы рекомендуем для каждого последующего рекуррентного платежа использовать идентификаторы предыдущего, а не первого родительского.</p>
+</div>
+<h3 id="checkout">Интеграция без использования Checkout<a class="headerlink" href="#checkout" title="Permanent link">&para;</a></h3>
+<ul>
+<li>создаем в платформе инвойс</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {YOUR_API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1538484422&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;shopID&quot;: &quot;TEST&quot;,</span>
+<span class="s1">  &quot;dueDate&quot;: &quot;2018-09-28T09:57:12.183Z&quot;,</span>
+<span class="s1">  &quot;amount&quot;: 1000,</span>
+<span class="s1">  &quot;currency&quot;: &quot;RUB&quot;,</span>
+<span class="s1">  &quot;product&quot;: &quot;Recurring Parent #1&quot;,</span>
+<span class="s1">  &quot;description&quot;: &quot;Delicious meals&quot;,</span>
+<span class="s1">&quot;metadata&quot;: </span>
+<span class="s1">  { </span>
+<span class="s1">    &quot;order_id&quot;: &quot;Internal order num 13123298761&quot;</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>пример ответа платформы</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;invoice&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+        <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-02T12:52:42.489022Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Delicious meals&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;dueDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-02T13:52:43.623000Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;141oE76atY8&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;order_id&quot;</span><span class="p">:</span> <span class="s2">&quot;Internal order num 13123298761&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Recurring Parent #1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shopID&quot;</span><span class="p">:</span> <span class="s2">&quot;TEST&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;unpaid&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;invoiceAccessToken&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;payload&quot;</span><span class="p">:</span> <span class="s2">&quot;{INVOICE_ACCESS_TOKEN}&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>запускам по инвойсу платеж, сообщая платформе, что он должен стать родительским рекуррентным платежом, передавая <code>"makeRecurrent": true</code>;</li>
+<li>платеж может запускаться как по одностадийной (Instant), так и двухстадийной (Hold) схеме:</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices/141oE76atY8/payments <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {INVOICE_ACCESS_TOKEN}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1538484795&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;flow&quot;: {</span>
+<span class="s1">    &quot;type&quot;: &quot;PaymentFlowInstant&quot;</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;payer&quot;: {</span>
+<span class="s1">      &quot;payerType&quot;: &quot;PaymentResourcePayer&quot;,</span>
+<span class="s1">    &quot;paymentToolToken&quot;:&quot;{PAYMENT_TOOL_TOKEN}&quot;,</span>
+<span class="s1">    &quot;contactInfo&quot;:</span>
+<span class="s1">      {</span>
+<span class="s1">        &quot;email&quot;:&quot;test@test.com&quot;,</span>
+<span class="s1">        &quot;phoneNumber&quot;:&quot;9876543210&quot;</span>
+<span class="s1">      }</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;makeRecurrent&quot;: true</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>пример ответа платформы:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+    <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-02T12:55:29.471382Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;flow&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentFlowInstant&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;invoiceID&quot;</span><span class="p">:</span> <span class="s2">&quot;141oE76atY8&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;makeRecurrent&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;payer&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;clientInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;123&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;ip&quot;</span><span class="p">:</span> <span class="s2">&quot;2A04:4A00:5:1014::100D&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;contactInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;test@test.com&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;9876543210&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;payerType&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentResourcePayer&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paymentSession&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_SESSION}&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paymentToolDetails&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;bin&quot;</span><span class="p">:</span> <span class="s2">&quot;424242&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;cardNumberMask&quot;</span><span class="p">:</span> <span class="s2">&quot;424242******4242&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;detailsType&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentToolDetailsBankCard&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;lastDigits&quot;</span><span class="p">:</span> <span class="s2">&quot;4242&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;paymentSystem&quot;</span><span class="p">:</span> <span class="s2">&quot;visa&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;paymentToolToken&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_TOOL_TOKEN}&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;pending&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>в большинстве случаев мы будем требовать прохождения 3D-Secure для успешной обработки подобных платежей;</li>
+<li>обрабатываем платеж как обычный и убеждаемся в его переходе в успешное состояние:</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X GET <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices/141oE76atY8/payments/1 <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {INVOICE_ACCESS_TOKEN}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1538485221&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>пример ответа платформы, платеж успешен:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+    <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-02T12:55:29.471382Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;flow&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentFlowInstant&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;invoiceID&quot;</span><span class="p">:</span> <span class="s2">&quot;141oE76atY8&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;makeRecurrent&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;payer&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;clientInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;123&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;ip&quot;</span><span class="p">:</span> <span class="s2">&quot;2A04:4A00:5:1014::100D&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;contactInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;test@test.com&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;9876543210&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;payerType&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentResourcePayer&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paymentSession&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_SESSION}&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paymentToolDetails&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;bin&quot;</span><span class="p">:</span> <span class="s2">&quot;424242&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;cardNumberMask&quot;</span><span class="p">:</span> <span class="s2">&quot;424242******4242&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;detailsType&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentToolDetailsBankCard&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;lastDigits&quot;</span><span class="p">:</span> <span class="s2">&quot;4242&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;paymentSystem&quot;</span><span class="p">:</span> <span class="s2">&quot;visa&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;paymentToolToken&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_TOOL_TOKEN}&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;captured&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>теперь у нас имеются идентификаторы успешных родительских инвойса <code>141oE76atY8</code> и платежа <code>1</code>, мы используем их в следующем вызове создания платежа уже без участия плательщика и ввода карты;</li>
+<li>для начала создаем в платформе новый инвойс:</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {YOUR_API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1538485363&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;shopID&quot;: &quot;TEST&quot;,</span>
+<span class="s1">  &quot;dueDate&quot;: &quot;2018-10-02T13:52:43.623Z&quot;,</span>
+<span class="s1">  &quot;amount&quot;: 1000,</span>
+<span class="s1">  &quot;currency&quot;: &quot;RUB&quot;,</span>
+<span class="s1">  &quot;product&quot;: &quot;Recurring Child #1&quot;,</span>
+<span class="s1">  &quot;description&quot;: &quot;Delicious meals&quot;,</span>
+<span class="s1">&quot;metadata&quot;: </span>
+<span class="s1">  { </span>
+<span class="s1">    &quot;order_id&quot;: &quot;Internal order num 13123298761&quot;</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>пример ответа платформы:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;invoice&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+        <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-02T13:02:58.058595Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Delicious meals&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;dueDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-02T14:02:59.155000Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;141oxZOgbmy&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;order_id&quot;</span><span class="p">:</span> <span class="s2">&quot;Internal order num 13123298761&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Recurring Child #1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shopID&quot;</span><span class="p">:</span> <span class="s2">&quot;TEST&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;unpaid&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;invoiceAccessToken&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;payload&quot;</span><span class="p">:</span> <span class="s2">&quot;{INVOICE_ACCESS_TOKEN}&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>оплатим этот инвойс с помощью рекуррентного платежа, передав идентификаторы предыдущего родительского платежа;</li>
+<li>также пометим этот платеж как родительский для следующих рекуррентных платежей:</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices/141oxZOgbmy/payments <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {INVOICE_ACCESS_TOKEN}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1538485479&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;flow&quot;: {</span>
+<span class="s1">    &quot;type&quot;: &quot;PaymentFlowHold&quot;,</span>
+<span class="s1">    &quot;onHoldExpiration&quot;: &quot;cancel&quot;</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;payer&quot;: {</span>
+<span class="s1">      &quot;payerType&quot;: &quot;RecurrentPayer&quot;,</span>
+<span class="s1">    &quot;recurrentParentPayment&quot;: {</span>
+<span class="s1">      &quot;invoiceID&quot;: &quot;141oE76atY8&quot;,</span>
+<span class="s1">      &quot;paymentID&quot;: &quot;1&quot;</span>
+<span class="s1">    },</span>
+<span class="s1">    &quot;contactInfo&quot;:</span>
+<span class="s1">      {</span>
+<span class="s1">        &quot;email&quot;:&quot;test@test.com&quot;,</span>
+<span class="s1">        &quot;phoneNumber&quot;:&quot;9876543210&quot;</span>
+<span class="s1">      }</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;makeRecurrent&quot;: true</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>платеж успешно создан:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+    <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-02T13:04:33.717364Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;flow&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;heldUntil&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-03T13:04:33Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;onHoldExpiration&quot;</span><span class="p">:</span> <span class="s2">&quot;cancel&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentFlowHold&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;invoiceID&quot;</span><span class="p">:</span> <span class="s2">&quot;141oxZOgbmy&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;makeRecurrent&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;payer&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;contactInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;test@test.com&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;9876543210&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;payerType&quot;</span><span class="p">:</span> <span class="s2">&quot;RecurrentPayer&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;recurrentParentPayment&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;invoiceID&quot;</span><span class="p">:</span> <span class="s2">&quot;141oE76atY8&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;paymentID&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;pending&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>убедимся, что платеж прошел успешно:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+    <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-02T13:04:33.717364Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;flow&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;heldUntil&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-10-03T13:04:33Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;onHoldExpiration&quot;</span><span class="p">:</span> <span class="s2">&quot;cancel&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentFlowHold&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;invoiceID&quot;</span><span class="p">:</span> <span class="s2">&quot;141oxZOgbmy&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;makeRecurrent&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;payer&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;contactInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;test@test.com&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;9876543210&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;payerType&quot;</span><span class="p">:</span> <span class="s2">&quot;RecurrentPayer&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;recurrentParentPayment&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;invoiceID&quot;</span><span class="p">:</span> <span class="s2">&quot;141oE76atY8&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;paymentID&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;captured&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>теперь мы можем использовать этот платеж как родительский, используя его идентификаторы <code>141oxZOgbmy</code> и <code>1</code> для оплаты последующих инвойсов.</li>
+</ul>
+<h3 id="c-checkout">Интеграция c использованием Checkout<a class="headerlink" href="#c-checkout" title="Permanent link">&para;</a></h3>
+<p>Алгоритм интеграции полностью соответствует вышеописанному, за исключением того, что вызовы createPayment() выполняются самой платежной формой, а также параметром Checkout API необходимо передать <code>recurring = true</code></p>
+<h2 id="_3">Рекуррентные платежи по привязанной карте<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Платформа предоставляет возможность провести процесс привязки карты к плательщику, созданному внутри платформы. В виде взаимодействия с плательщиком это может выглядеть следующим образом:</p>
+<ul>
+<li>плательщик заходит в личный кабинет на вашем сайте;</li>
+<li>отображаем плательщику кнопку &ldquo;Привязать карту&rdquo;;</li>
+<li>плательщик нажимает на кнопку, открывается форма ввода карточных данных;</li>
+<li>плательщик вводит данные карты и нажимает кнопку &ldquo;Привязать карту&rdquo; и соглашается с условиями безакцептных списаний;</li>
+<li>платформа в это время производит попытку списания и мгновенного возврата произвольной суммы (на момент написания этой версии документации - 10₽/1$/1€) с карты плательщика;</li>
+<li>в случае успешного списания платформа предоставляет возможность списывать средства с привязанной карты уже с вашего бекэнда без участия плательщика.</li>
+</ul>
+<h3 id="_4">Привязка карт и плательщики<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>На момент написания текущей версии статьи в один момент времени существует только одна активная привязка карты. Количество привязываемых к плательщику карт – не ограничено. Активной становится последняя привязанная карта.</p>
+<h4 id="rbkmoney-checkout">Пример реализации с RBKmoney Checkout<a class="headerlink" href="#rbkmoney-checkout" title="Permanent link">&para;</a></h4>
+<ul>
+<li>создаем плательщика в Платформе</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/customers <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1518694385&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;shopID&quot;: &quot;TEST&quot;,</span>
+<span class="s1">  &quot;contactInfo&quot;: {</span>
+<span class="s1">    &quot;email&quot;: &quot;user@example.com&quot;,</span>
+<span class="s1">    &quot;phoneNumber&quot;: &quot;79876543210&quot;</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;metadata&quot;: {}</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>в ответ Платформа пришлет структуру вида</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;customer&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;contactInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;79876543210&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;10UWY0qQpU0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="nt">&quot;shopID&quot;</span><span class="p">:</span> <span class="s2">&quot;TEST&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;unready&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;customerAccessToken&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;payload&quot;</span><span class="p">:</span> <span class="s2">&quot;{CUSTOMER_ACCESS_TOKEN}&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>
+<p>полученные <code>customer.id</code> и <code>customerAccessToken.payload</code> передаем в <a href="/docs/payments/checkout/#_3">RBKmoney Checkout</a></p>
+</li>
+<li>
+<p>плательщик вводит карточные данные в форму и нажимает &ldquo;Привязать&rdquo;</p>
+</li>
+</ul>
+<p><img alt="checkout_binding.png" src="/docs/payments/img/checkout_binding.png" /></p>
+<ul>
+<li>проверяем состояние плательщика (либо обрабатываем соответствующий вебхук)</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X GET <span class="se">\</span>
+  https://api.rbk.money/v2/processing/customers/10UWY0qQpU0 <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1527070201&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>в случае успешной привязки объект плательщика переходит в состояние <code>ready</code></li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;contactInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;79876543210&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;10UWY0qQpU0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="nt">&quot;shopID&quot;</span><span class="p">:</span> <span class="s2">&quot;TEST&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;ready&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>стандартно создаем в Платформе инвойс</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1518694537&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;shopID&quot;: &quot;TEST&quot;,</span>
+<span class="s1">  &quot;dueDate&quot;: &quot;2018-02-15T12:35:34.293Z&quot;,</span>
+<span class="s1">  &quot;amount&quot;: 6000,</span>
+<span class="s1">  &quot;currency&quot;: &quot;RUB&quot;,</span>
+<span class="s1">  &quot;product&quot;: &quot;Заказ номер 12345&quot;,</span>
+<span class="s1">  &quot;description&quot;: &quot;Изысканная кухня&quot;,</span>
+<span class="s1">    &quot;cart&quot;: [</span>
+<span class="s1">        {</span>
+<span class="s1">            &quot;price&quot;: 5000,</span>
+<span class="s1">            &quot;product&quot;: &quot;Бутерброд с сыром&quot;,</span>
+<span class="s1">            &quot;quantity&quot;: 1,</span>
+<span class="s1">            &quot;taxMode&quot;: {</span>
+<span class="s1">                &quot;rate&quot;: &quot;10%&quot;,</span>
+<span class="s1">                &quot;type&quot;: &quot;InvoiceLineTaxVAT&quot;</span>
+<span class="s1">            }</span>
+<span class="s1">        },</span>
+<span class="s1">        {</span>
+<span class="s1">            &quot;price&quot;: 1000,</span>
+<span class="s1">            &quot;product&quot;: &quot;Компот&quot;,</span>
+<span class="s1">            &quot;quantity&quot;: 1,</span>
+<span class="s1">            &quot;taxMode&quot;: {</span>
+<span class="s1">                &quot;rate&quot;: &quot;18%&quot;,</span>
+<span class="s1">                &quot;type&quot;: &quot;InvoiceLineTaxVAT&quot;</span>
+<span class="s1">            }</span>
+<span class="s1">        }</span>
+<span class="s1">    ],  </span>
+<span class="s1">&quot;metadata&quot;: {}</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>однако, передаем не токен платежного средства, а ID нашего плательщика, а также указываем тип <code>"payerType": "CustomerPayer"</code></li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v1/processing/invoices/xtdikju7jk/payments <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {INVOICE_ACCESS_TOKEN}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1518694583&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;flow&quot;: {</span>
+<span class="s1">    &quot;type&quot;: &quot;PaymentFlowInstant&quot;</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;payer&quot;: {</span>
+<span class="s1">    &quot;payerType&quot;: &quot;CustomerPayer&quot;,</span>
+<span class="s1">    &quot;customerID&quot;: &quot;xtdX5zlluy&quot;</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<h4 id="_5">Реализация с собственной платежной формой<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>получаем платежные токен и сессию с вашей формы ввода карточных данных</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/payment-resources <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1527071069&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;paymentTool&quot;: {</span>
+<span class="s1">    &quot;paymentToolType&quot;: &quot;CardData&quot;,</span>
+<span class="s1">    &quot;cardNumber&quot;: &quot;5169147129584558&quot;,</span>
+<span class="s1">    &quot;expDate&quot;: &quot;12/20&quot;,</span>
+<span class="s1">    &quot;cvv&quot;: &quot;123&quot;,</span>
+<span class="s1">    &quot;cardHolder&quot;: &quot;SUCCESS CARD&quot;</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;clientInfo&quot;: {</span>
+<span class="s1">  &quot;fingerprint&quot;: &quot;string&quot;</span>
+<span class="s1">}</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>платформа возвращает <code>paymentToolToken</code> и <code>paymentSession</code></li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;clientInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ip&quot;</span><span class="p">:</span> <span class="s2">&quot;2A04:4A00:5:1014::100D&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;paymentSession&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_SESSION}&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;paymentToolDetails&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;bin&quot;</span><span class="p">:</span> <span class="s2">&quot;516914&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;cardNumberMask&quot;</span><span class="p">:</span> <span class="s2">&quot;516914******4558&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;detailsType&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentToolDetailsBankCard&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;lastDigits&quot;</span><span class="p">:</span> <span class="s2">&quot;4558&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paymentSystem&quot;</span><span class="p">:</span> <span class="s2">&quot;mastercard&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;paymentToolToken&quot;</span><span class="p">:</span> <span class="s2">&quot;{PAYMENT_TOOL_TOKEN}&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>Обратите внимание! Привязка карт <em>всегда</em> требует прохождения процесса <a href="../3dsecure/">3D-Secure</a></p>
+<ul>
+<li>передаем полученные <code>paymentToolToken</code> и <code>paymentSession</code> в метод <a href="https://developer.rbk.money/api/#operation/createBinding">createBinding</a></li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/customers/xtdX5zlluy/bindings <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1518694466&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;paymentResource&quot;: {</span>
+<span class="s1">    &quot;paymentToolToken&quot;: &quot;{PAYMENT_TOOL_TOKEN}&quot;,</span>
+<span class="s1">    &quot;paymentSession&quot;: &quot;{PAYMENT_SESSION}&quot;</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>запускаем поллинг событий плательщика</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X GET <span class="se">\</span>
+  <span class="s1">&#39;https://api.rbk.money/v2/processing/customers/10UWY0qQpU0/events?limit=100&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1527071300&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>
+<p>обрабатываем события плательщика точно таким же образом, как и платежа</p>
+</li>
+<li>
+<p>после перехода плательщика в состояние <code>ready</code> создаем инвойсы и производим списания с плательщика как указано вы инструкции выше.</p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../3dsecure/" title="3D-Secure" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Ранее
+                </span>
+                3D-Secure
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../postman/" title="Postman" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Далее
+                </span>
+                Postman
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+      
+        <script src="https://checkout.rbk.money/checkout.js"></script>
+      
+        <script src="/docs/payments/livedemo/livedemo.js"></script>
+      
+        <script src="/docs/lightbox/js/lightbox.min.js"></script>
+      
+    
+  </body>
+</html>

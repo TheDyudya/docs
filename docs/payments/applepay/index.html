@@ -1,0 +1,1514 @@
+
+
+
+
+<!doctype html>
+<html lang="" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="">
+      
+        <meta name="lang:clipboard.copied" content="">
+      
+        <meta name="lang:search.language" content="">
+      
+        <meta name="lang:search.pipeline.stopwords" content="">
+      
+        <meta name="lang:search.pipeline.trimmer" content="">
+      
+        <meta name="lang:search.result.none" content="">
+      
+        <meta name="lang:search.result.one" content="">
+      
+        <meta name="lang:search.result.other" content="">
+      
+        <meta name="lang:search.tokenizer" content="">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Apple Pay - RBKmoney|docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/override.css">
+    
+      <link rel="stylesheet" href="/docs/lightbox/css/lightbox.min.css">
+    
+      <link rel="stylesheet" href="/docs/payments/livedemo/livedemo.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#apple-pay-rbkmoney-api" tabindex="1" class="md-skip">
+        
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="" title="RBKmoney|docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                RBKmoney|docs
+              </span>
+              <span class="md-header-nav__topic">
+                Apple Pay
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/rbkmoney/docs/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    RBKmoney|docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/rbkmoney/docs/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Документация" class="md-nav__link">
+      Документация
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Интеграция
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Интеграция
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Payments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Payments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Обзор" class="md-nav__link">
+      Обзор
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../checkout/" title="Checkout" class="md-nav__link">
+      Checkout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tokenizer/" title="Tokenizer" class="md-nav__link">
+      Tokenizer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3dsecure/" title="3D-Secure" class="md-nav__link">
+      3D-Secure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../recurring/" title="Recurring" class="md-nav__link">
+      Recurring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../postman/" title="Postman" class="md-nav__link">
+      Postman
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../googlepay/" title="Google Pay" class="md-nav__link">
+      Google Pay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Apple Pay
+      </label>
+    
+    <a href="./" title="Apple Pay" class="md-nav__link md-nav__link--active">
+      Apple Pay
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Оглавление</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#buy-with-apple-pay-web-" title=""Buy with Apple Pay" в web-приложении" class="md-nav__link">
+    "Buy with Apple Pay" в web-приложении
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apple-pay" title="Проверка возможности оплаты с помощью Apple Pay" class="md-nav__link">
+    Проверка возможности оплаты с помощью Apple Pay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="Формируем структуру платежа для сессии" class="md-nav__link">
+    Формируем структуру платежа для сессии
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="Проводим валидацию мерчанта" class="md-nav__link">
+    Проводим валидацию мерчанта
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Запускаем сессию и обрабатываем оплату" class="md-nav__link">
+    Запускаем сессию и обрабатываем оплату
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buy-with-apple-pay" title="Отображаем кнопку "Buy with Apple Pay"" class="md-nav__link">
+    Отображаем кнопку "Buy with Apple Pay"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="Пример кнопки оплаты" class="md-nav__link">
+    Пример кнопки оплаты
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Собираем все вместе" class="md-nav__link">
+    Собираем все вместе
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apple-pay-rbkmoney-api_1" title="Интеграция Apple Pay в RBKmoney API" class="md-nav__link">
+    Интеграция Apple Pay в RBKmoney API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paymentresourse" title="Пример структуры paymentResourse" class="md-nav__link">
+    Пример структуры paymentResourse
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="Необходимые данные" class="md-nav__link">
+    Необходимые данные
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="Пример корректно заполненной структуры" class="md-nav__link">
+    Пример корректно заполненной структуры
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="Собираем все вместе" class="md-nav__link">
+    Собираем все вместе
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-9" type="checkbox" id="nav-2-1-9">
+    
+    <label class="md-nav__link" for="nav-2-1-9">
+      Примеры
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-9">
+        Примеры
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/php-kkt-cart-webhooks/" title="PHP and Checkout" class="md-nav__link">
+      PHP and Checkout
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-10" type="checkbox" id="nav-2-1-10">
+    
+    <label class="md-nav__link" for="nav-2-1-10">
+      Модули CMS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-10">
+        Модули CMS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/bitrix/" title="Bitrix" class="md-nav__link">
+      Bitrix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/insales/" title="InSales" class="md-nav__link">
+      InSales
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/webasyst/" title="Webasyst/ShopScript" class="md-nav__link">
+      Webasyst/ShopScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/woocommerce/" title="Wordpress/Woocommerce" class="md-nav__link">
+      Wordpress/Woocommerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/wp-e-commerce/" title="Wordpress/E-commerce" class="md-nav__link">
+      Wordpress/E-commerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/opencart/" title="Opencart" class="md-nav__link">
+      Opencart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/netcat/" title="Netcat" class="md-nav__link">
+      Netcat
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/prestashop/" title="Prestashop" class="md-nav__link">
+      Prestashop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/ubercart/" title="Drupal/Ubercart" class="md-nav__link">
+      Drupal/Ubercart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/drupal-commerce/" title="Drupal/Commerce" class="md-nav__link">
+      Drupal/Commerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/magento/" title="Magento" class="md-nav__link">
+      Magento
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cms-modules/virtuemart/" title="Joomla/Virtuemart" class="md-nav__link">
+      Joomla/Virtuemart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Wallets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Wallets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wallets/overview/" title="Обзор" class="md-nav__link">
+      Обзор
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wallets/usage/" title="Работа с кошельками" class="md-nav__link">
+      Работа с кошельками
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../wallets/card-payouts/" title="Выплаты на карты" class="md-nav__link">
+      Выплаты на карты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Справочники
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Справочники
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../refs/testcards/" title="Тестовые карты" class="md-nav__link">
+      Тестовые карты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+    
+  
+  	<li class="md-nav__item">
+		<a href="https://developer.rbk.money/api/" title="Payments API" class="md-nav__link" target="_blank">
+			Payments API
+		</a>
+	</li>
+  
+  	<li class="md-nav__item">
+		<a href="https://rbkmoney.github.io/wallets-api/v0/" title="Wallets API" class="md-nav__link" target="_blank">
+			Wallets API
+		</a>
+	</li>
+  
+  	<li class="md-nav__item">
+		<a href="https://rbkmoney.github.io/wallets-api/v0/?api/privdoc/swagger.json" title="Identity Storage API" class="md-nav__link" target="_blank">
+			Identity Storage API
+		</a>
+	</li>
+  
+
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Оглавление</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#buy-with-apple-pay-web-" title=""Buy with Apple Pay" в web-приложении" class="md-nav__link">
+    "Buy with Apple Pay" в web-приложении
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apple-pay" title="Проверка возможности оплаты с помощью Apple Pay" class="md-nav__link">
+    Проверка возможности оплаты с помощью Apple Pay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="Формируем структуру платежа для сессии" class="md-nav__link">
+    Формируем структуру платежа для сессии
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="Проводим валидацию мерчанта" class="md-nav__link">
+    Проводим валидацию мерчанта
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="Запускаем сессию и обрабатываем оплату" class="md-nav__link">
+    Запускаем сессию и обрабатываем оплату
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buy-with-apple-pay" title="Отображаем кнопку "Buy with Apple Pay"" class="md-nav__link">
+    Отображаем кнопку "Buy with Apple Pay"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="Пример кнопки оплаты" class="md-nav__link">
+    Пример кнопки оплаты
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Собираем все вместе" class="md-nav__link">
+    Собираем все вместе
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apple-pay-rbkmoney-api_1" title="Интеграция Apple Pay в RBKmoney API" class="md-nav__link">
+    Интеграция Apple Pay в RBKmoney API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paymentresourse" title="Пример структуры paymentResourse" class="md-nav__link">
+    Пример структуры paymentResourse
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="Необходимые данные" class="md-nav__link">
+    Необходимые данные
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="Пример корректно заполненной структуры" class="md-nav__link">
+    Пример корректно заполненной структуры
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="Собираем все вместе" class="md-nav__link">
+    Собираем все вместе
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rbkmoney/docs/edit/master/docs/docs/payments/applepay/index.md" title="Редактировать эту страницу" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="apple-pay-rbkmoney-api">Интеграция Apple Pay в RBKmoney API<a class="headerlink" href="#apple-pay-rbkmoney-api" title="Permanent link">&para;</a></h1>
+<p>Apple Pay — это метод токенизации карточных данных плательщика, который позволяет ускорить и упростить оплату ваших товаров и услуг. В случае, если у плательщика добавлена карта в приложении Apple Pay, он может оплачивать покупки, вводя не свои карточные данные, а используя кнопку &ldquo;Покупка с Apple Pay&rdquo;. </p>
+<p>Для проведения платежа достаточно передать полученные из Apple Pay токенизированные карточные данные в RBKmoney API, создать инвойс в Платформе и оплатить его с помощью токена RBKmoney, который содержит в себе токен Apple Pay. Таким образом, при оплате производится процесс двойной токенизации - Платформа RBKmoney реализует в схожую бизнес-логику при проведении платежей, создавая на основе платежных данных токены, которые используются для запуска платежей.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Данная инструкция предназначена для тех, кто подключается как платежный процессинг, либо предпочитает верстать свою собственную платежную форму. Если вы используете <a href="/docs/payments/checkout/">RBKmoney Checkout</a>, то кнопка Apple Pay уже включена для ваших плательщиков, никаких дополнительных действий не требуется.</p>
+</div>
+<h2 id="buy-with-apple-pay-web-">&ldquo;Buy with Apple Pay&rdquo; в web-приложении<a class="headerlink" href="#buy-with-apple-pay-web-" title="Permanent link">&para;</a></h2>
+<p>Для получения структуры данных Apple Pay, содержащих токен карточных данных, а также другие необходимые для запуска платежа данные, придется реализовать несколько бизнес-процессов, реализуемых в API Safari. Они заключаются в проверке возможности оплаты, запуске сессии, и т.н. валидации мерчанта, когда для запуска платежа нужно будет обратиться по специальному адресу бекэнда RBKmoney.</p>
+<p>Рассмотрим пример успешного платеже с тестовой карты Apple Pay с примерами кода на JavaScript.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Здесь и в дальнейшем будет использоваться тестовая карта MasterCard Apple Pay со следующими данными.
+PAN: <strong>5204 2477 5000 1471</strong>, Expiration Date: <strong>11/2022</strong>, CVC: <strong>111</strong>. Инструкция по созданию тестового аккаунта Apple и по привязке тестовой карты можно прочитать в официальной документации <a href="https://developer.apple.com/apple-pay/sandbox-testing/">https://developer.apple.com/apple-pay/sandbox-testing/</a>. Также, Apple Pay не запрещает вам использовать вашу привязанную реальную карту, для нее также будет выведено окно оплаты. Однако, тестовая среда RBKmoney отклонит платеж с любой карты, кроме вышеуказанной тестовой и средства списаны не будут.</p>
+</div>
+<h3 id="apple-pay">Проверка возможности оплаты с помощью Apple Pay<a class="headerlink" href="#apple-pay" title="Permanent link">&para;</a></h3>
+<p>Убедимся, что устройство или браузер поддерживает оплату с Apple Pay в принципе, а также то, что в Wallet на устройстве добавлена карта, которой можно оплачивать покупки. Для проверки потребуется узнать идентификатор мерчанта.</p>
+<div class="codehilite"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">ApplePaySession</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">promise</span> <span class="o">=</span> <span class="nx">ApplePaySession</span><span class="p">.</span><span class="nx">canMakePaymentsWithActiveCard</span><span class="p">({</span><span class="nx">YOUR_MERCHANT_ID</span><span class="p">});</span>
+    <span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">canMakePayments</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">canMakePayments</span><span class="p">)</span>
+            <span class="c1">//карта привязана, можем запускать сессию</span>
+    <span class="p">});</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">//обрабатываем невозможность оплатить</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Используйте следующий идентификатор мерчанта тестовой среды RBKmoney: <strong>merchant.money.rbk.checkout</strong>. Для проведения боевых платежей вам необходимо будет пройти процедуру верификации домена, обратившись <a href="mailto:int@rbk.money">к нам</a>.
+Также, обратите внимание, что ApplePaySession запустится <strong>только</strong> на домене с валидным SSL-сертификатом!</p>
+</div>
+<h3 id="_1">Формируем структуру платежа для сессии<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>Задаем наименование товара или услуги, указываем сумму, опционально - валюту платежа. Создаем новую сессию оплаты. Обратите внимание! Сумма платежа должна совпадать со стоимостью созданного в RBKmoney инвойса!</p>
+<div class="codehilite"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;apple-pay-button&quot;</span><span class="p">).</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">paymentRequest</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nx">currencyCode</span><span class="o">:</span> <span class="s1">&#39;RUB&#39;</span><span class="p">,</span>
+        <span class="nx">countryCode</span><span class="o">:</span> <span class="s1">&#39;RU&#39;</span><span class="p">,</span>
+        <span class="nx">total</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">label</span><span class="o">:</span> <span class="p">{</span><span class="nx">PRODUCT_NAME</span><span class="p">},</span>
+            <span class="nx">amount</span><span class="o">:</span> <span class="p">{</span><span class="nx">PAYMENT_AMOUNT</span><span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nx">merchantCapabilities</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;supports3DS&#39;</span><span class="p">],</span>
+        <span class="nx">supportedNetworks</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;masterCard&#39;</span><span class="p">,</span> <span class="s1">&#39;visa&#39;</span><span class="p">]</span>
+    <span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">session</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ApplePaySession</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nx">paymentRequest</span><span class="p">);</span>    
+</pre></div>
+
+
+<h3 id="_2">Проводим валидацию мерчанта<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>Для проверки возможности оплаты для вашего идентификатора мерчанта и получения необходимых данных для запуска платежа необходимо сформировать структуру данных, асинхронно передать ее на бекэнд RBKmoney и обработать полученный коллбек.</p>
+<div class="codehilite"><pre><span></span><span class="nx">session</span><span class="p">.</span><span class="nx">onvalidatemerchant</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">promise</span> <span class="o">=</span> <span class="nx">validateMerchant</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">validationURL</span><span class="p">);</span>
+    <span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">merchantSession</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">session</span><span class="p">.</span><span class="nx">completeMerchantValidation</span><span class="p">(</span><span class="nx">merchantSession</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">validateMerchant</span><span class="p">(</span><span class="nx">validationURL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">applePayPayload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;merchantId&#39;</span><span class="o">:</span> <span class="p">{</span><span class="nx">YOUR_MERCHANT_ID</span><span class="p">},</span>
+            <span class="s1">&#39;validationURL&#39;</span><span class="o">:</span> <span class="p">{</span><span class="nx">RBKMONEY_VALIDATION_URL</span><span class="p">},</span>
+            <span class="s1">&#39;body&#39;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s1">&#39;merchantIdentifier&#39;</span><span class="o">:</span> <span class="p">{</span><span class="nx">YOUR_MERCHANT_ID</span><span class="p">},</span>
+                <span class="s1">&#39;domainName&#39;</span><span class="o">:</span> <span class="p">{</span><span class="nx">YOUR_DOMAIN_NAME</span><span class="p">},</span>
+                <span class="s1">&#39;displayName&#39;</span><span class="o">:</span> <span class="p">{</span><span class="nx">PRODUCT_NAME</span><span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+        <span class="nx">xhr</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">responseText</span><span class="p">);</span>
+            <span class="nx">resolve</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+        <span class="p">};</span>
+        <span class="nx">xhr</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span> <span class="nx">reject</span><span class="p">;</span>
+        <span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="nx">merchantValidationEndpoint</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="nx">xhr</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span> <span class="s1">&#39;application/json;charset=utf-8&#39;</span><span class="p">);</span>
+        <span class="nx">xhr</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">applePayPayload</span><span class="p">));</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>На момент написания статьи активный validationURL RBKmoney - <strong>https://wrapper.rbk.money/applepay/api/v1/session</strong>, используйте его для валидации вашего мерчанта.</p>
+</div>
+<h3 id="_3">Запускаем сессию и обрабатываем оплату<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="nx">session</span><span class="p">.</span><span class="nx">onpaymentauthorized</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//после получения токена передаем его себе на бекэнд</span>
+
+    <span class="nx">session</span><span class="p">.</span><span class="nx">completePayment</span><span class="p">(</span><span class="nx">ApplePaySession</span><span class="p">.</span><span class="nx">STATUS_SUCCESS</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">session</span><span class="p">.</span><span class="nx">begin</span><span class="p">();</span>
+</pre></div>
+
+
+<h3 id="buy-with-apple-pay">Отображаем кнопку &ldquo;Buy with Apple Pay&rdquo;<a class="headerlink" href="#buy-with-apple-pay" title="Permanent link">&para;</a></h3>
+<p>Согласно гайдлайнам Apple размечаем CSS, отображаем кнопку оплаты и вешаем на нее обработчик, который запустит сессию и проведет платеж.</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;apple-pay-button-with-text apple-pay-button-black-with-text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;apple-pay-button&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text&quot;</span><span class="p">&gt;</span>Buy with<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;logo&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h3 id="_4">Пример кнопки оплаты<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>Если все было сделано корректно, ваш браузер или устройство поддерживают Apple Pay с привязанной картой, то отобразится кнопка оплаты:</p>
+<div class="apple-pay-button-with-text apple-pay-button-black-with-text" id="apple-pay-button" style="">
+  <span class="text">Buy with</span>
+  <span class="logo"></span>
+</div>
+
+<script src="applepay.js"></script>
+
+<p><link rel="stylesheet" href="applepay.css"></p>
+<p><img alt="photo_2018-06-14_20-32-59.jpg" src="/docs/payments/img/photo_2018-06-14_20-32-59.jpg" /></p>
+<h3 id="_5">Собираем все вместе<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>Пример JS-кода.</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">domainName</span> <span class="o">=</span> <span class="s1">&#39;developer.rbk.money&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">merchantIdentifier</span> <span class="o">=</span> <span class="s1">&#39;merchant.money.rbk.checkout&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">paymentAmount</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">merchantValidationEndpoint</span> <span class="o">=</span> <span class="s1">&#39;https://wrapper.rbk.money/applepay/api/v1/session&#39;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">displayName</span> <span class="o">=</span> <span class="s1">&#39;RBKmoney Apple Pay Test&#39;</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">ApplePaySession</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">promise</span> <span class="o">=</span> <span class="nx">ApplePaySession</span><span class="p">.</span><span class="nx">canMakePaymentsWithActiveCard</span><span class="p">(</span><span class="nx">merchantIdentifier</span><span class="p">);</span>
+    <span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">canMakePayments</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">canMakePayments</span><span class="p">)</span>
+            <span class="nx">processApplePayRoutine</span><span class="p">();</span>
+        <span class="k">else</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;apple-pay-button&quot;</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+    <span class="p">});</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;apple-pay-button&quot;</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s1">&#39;none&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">processApplePayRoutine</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;apple-pay-button&quot;</span><span class="p">).</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">paymentRequest</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="nx">currencyCode</span><span class="o">:</span> <span class="s1">&#39;RUB&#39;</span><span class="p">,</span>
+            <span class="nx">countryCode</span><span class="o">:</span> <span class="s1">&#39;RU&#39;</span><span class="p">,</span>
+            <span class="nx">total</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">label</span><span class="o">:</span> <span class="nx">displayName</span><span class="p">,</span>
+                <span class="nx">amount</span><span class="o">:</span> <span class="nx">paymentAmount</span>
+            <span class="p">},</span>
+            <span class="nx">merchantCapabilities</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;supports3DS&#39;</span><span class="p">],</span>
+            <span class="nx">supportedNetworks</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;masterCard&#39;</span><span class="p">,</span> <span class="s1">&#39;visa&#39;</span><span class="p">]</span>
+        <span class="p">};</span>
+
+        <span class="kd">var</span> <span class="nx">session</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ApplePaySession</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="nx">paymentRequest</span><span class="p">);</span>
+
+        <span class="nx">session</span><span class="p">.</span><span class="nx">onvalidatemerchant</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">promise</span> <span class="o">=</span> <span class="nx">validateMerchant</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">validationURL</span><span class="p">);</span>
+            <span class="nx">promise</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">merchantSession</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">session</span><span class="p">.</span><span class="nx">completeMerchantValidation</span><span class="p">(</span><span class="nx">merchantSession</span><span class="p">);</span>
+            <span class="p">});</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">validateMerchant</span><span class="p">(</span><span class="nx">validationURL</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">applePayPayload</span> <span class="o">=</span> <span class="p">{</span>
+                    <span class="s1">&#39;merchantId&#39;</span><span class="o">:</span> <span class="nx">merchantIdentifier</span><span class="p">,</span>
+                    <span class="s1">&#39;validationURL&#39;</span><span class="o">:</span> <span class="nx">validationURL</span><span class="p">,</span>
+                    <span class="s1">&#39;body&#39;</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="s1">&#39;merchantIdentifier&#39;</span><span class="o">:</span> <span class="nx">merchantIdentifier</span><span class="p">,</span>
+                        <span class="s1">&#39;domainName&#39;</span><span class="o">:</span> <span class="nx">domainName</span><span class="p">,</span>
+                        <span class="s1">&#39;displayName&#39;</span><span class="o">:</span> <span class="nx">displayName</span>
+                    <span class="p">}</span>
+                <span class="p">};</span>
+
+                <span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+                    <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">responseText</span><span class="p">);</span>
+                    <span class="nx">resolve</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+                <span class="p">};</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span> <span class="nx">reject</span><span class="p">;</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="nx">merchantValidationEndpoint</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span> <span class="s1">&#39;application/json;charset=utf-8&#39;</span><span class="p">);</span>
+                <span class="nx">xhr</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">applePayPayload</span><span class="p">));</span>
+            <span class="p">});</span>
+        <span class="p">}</span>
+
+        <span class="nx">session</span><span class="p">.</span><span class="nx">onpaymentauthorized</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">payment</span><span class="p">.</span><span class="nx">token</span><span class="p">));</span>
+            <span class="nx">session</span><span class="p">.</span><span class="nx">completePayment</span><span class="p">(</span><span class="nx">ApplePaySession</span><span class="p">.</span><span class="nx">STATUS_SUCCESS</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="nx">session</span><span class="p">.</span><span class="nx">begin</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Встроенный в эту документацию скрипт логгирует данные Apple Pay в консоль вашего браузера. Вы можете просмотреть их и использовать для тестовых нужд.</p>
+</div>
+<h2 id="apple-pay-rbkmoney-api_1">Интеграция Apple Pay в RBKmoney API<a class="headerlink" href="#apple-pay-rbkmoney-api_1" title="Permanent link">&para;</a></h2>
+<p>Для проведения платежа с Apple Pay необходимо выполнить следующие вызовы RBKmoney API:</p>
+<ul>
+<li>создать в Платформе инвойс, вызвав метод <a href="https://developer.rbk.money/api/#operation/createInvoice">createInvoice()</a>;</li>
+<li>либо, если инвойс уже был создан ранее, создать <a href="https://developer.rbk.money/api/#operation/createInvoiceAccessToken">invoiceAccessToken</a>;</li>
+<li>используя полученный <code>invoiceAccessToken</code> создать платежный токен RBKmoney, вызывав метод <a href="https://developer.rbk.money/api/#operation/createPaymentResource">createPaymentResource()</a>;</li>
+<li>использовать полученный платежный токен RBKmoney для запуска одно- или двустадийных платежей.</li>
+</ul>
+<h3 id="paymentresourse">Пример структуры <a href="https://developer.rbk.money/api/#operation/createPaymentResource">paymentResourse</a><a class="headerlink" href="#paymentresourse" title="Permanent link">&para;</a></h3>
+<h4 id="_6">Необходимые данные<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>в переменной <code>paymentToolType</code> укажите значение <code>TokenizedCardData</code>;</li>
+<li>в переменной <code>provider</code> укажите <code>ApplePay</code>;</li>
+<li>в переменной <code>merchantID</code> укажите <code>merchant.money.rbk.checkout</code>;</li>
+<li>в структуру <code>paymentToken</code> передайте структуру, полученную из Apple Pay.</li>
+</ul>
+<h4 id="_7">Пример корректно заполненной структуры<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;paymentTool&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;paymentToolType&quot;</span><span class="p">:</span> <span class="s2">&quot;TokenizedCardData&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;provider&quot;</span><span class="p">:</span> <span class="s2">&quot;ApplePay&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;merchantID&quot;</span><span class="p">:</span> <span class="s2">&quot;merchant.money.rbk.checkout&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;paymentToken&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;token&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;paymentData&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;EC_v1&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="s2">&quot;SFifeDwQPOu8Rh47AF3qplwaXmxMYU0Ewu5aw51eJ4AbCa/7MwrbbaVog9WTHvpabl7xnDuHdD+wCyzElCKIxXs1acLs2aC0rP6XSixA7I49aN7s4eMGyc7ZP3hx2dPXFto4bh5I1Pd9+hRJITp//swx+wuAjM3TF0DupLNmkA77zIAlb24JzZ3ItOcRpHQDoYnWyO1IQKvUw9EW1yB54ialI/hUxyqhRniBIAeiPERHrakSzuUjmPdpOCsgQjGHFiN80le9i6cIkvl7HD5bOvaIdb6aAdUAU/uHTLElGT3dymrjQty1OZfmYHB12H0mrTPYJLSWf390247sDsOP4c/f9VmLxcD3wnMAId8J0zSSTWv0l10cW+JgfaP3mnto0Acb/UGXPBYwkP3daQ==&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="s2">&quot;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&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;header&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ephemeralPublicKey&quot;</span><span class="p">:</span> <span class="s2">&quot;MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEvCNyjDTYkSr9gboDq+76VvftIbAqUi4PbvJJP/e0XXRWv77MoNEmLh5pJag5ZSEpm7gTSKuTVJ8CgkFjbFpy8w==&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;publicKeyHash&quot;</span><span class="p">:</span> <span class="s2">&quot;ZVhwTYqTzCNgV16oq5xL0rSBMGRojETt21+DdgRXzyk=&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;transactionId&quot;</span><span class="p">:</span> <span class="s2">&quot;09e95dae77a116fa1a8fe2b049b8326ce5f9ff6f66ee8fd01289d05d19aa682e&quot;</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;paymentMethod&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;displayName&quot;</span><span class="p">:</span> <span class="s2">&quot;MasterCard 1471&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;MasterCard&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;debit&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;transactionIdentifier&quot;</span><span class="p">:</span> <span class="s2">&quot;09E95DAE77A116FA1A8FE2B049B8326CE5F9FF6F66EE8FD01289D05D19AA682E&quot;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;clientInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;d042b8eeada885f5bac8821d99101a09&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="_8">Собираем все вместе<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>Ниже приведена цепочка <code>curl</code> вызовов к API RBKmoney, позволяющая провести платеж с использованием платежного метода Apple Pay.</p>
+<ul>
+<li>создаем в Платформе инвойс:</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {YOUR_API_KEY}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1528470572&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;shopID&quot;: &quot;TEST&quot;,</span>
+<span class="s1">  &quot;dueDate&quot;: &quot;2018-06-08T14:56:31.416Z&quot;,</span>
+<span class="s1">  &quot;amount&quot;: 6000,</span>
+<span class="s1">  &quot;currency&quot;: &quot;RUB&quot;,</span>
+<span class="s1">  &quot;product&quot;: &quot;Order num 12345&quot;,</span>
+<span class="s1">  &quot;description&quot;: &quot;Delicious meals&quot;,</span>
+<span class="s1">    &quot;cart&quot;: [</span>
+<span class="s1">        {</span>
+<span class="s1">            &quot;price&quot;: 5000,</span>
+<span class="s1">            &quot;product&quot;: &quot;Sandwich&quot;,</span>
+<span class="s1">            &quot;quantity&quot;: 1,</span>
+<span class="s1">            &quot;taxMode&quot;: {</span>
+<span class="s1">                &quot;rate&quot;: &quot;10%&quot;,</span>
+<span class="s1">                &quot;type&quot;: &quot;InvoiceLineTaxVAT&quot;</span>
+<span class="s1">            }</span>
+<span class="s1">        },</span>
+<span class="s1">        {</span>
+<span class="s1">            &quot;price&quot;: 1000,</span>
+<span class="s1">            &quot;product&quot;: &quot;Cola&quot;,</span>
+<span class="s1">            &quot;quantity&quot;: 1,</span>
+<span class="s1">            &quot;taxMode&quot;: {</span>
+<span class="s1">                &quot;rate&quot;: &quot;18%&quot;,</span>
+<span class="s1">                &quot;type&quot;: &quot;InvoiceLineTaxVAT&quot;</span>
+<span class="s1">            }</span>
+<span class="s1">        }</span>
+<span class="s1">    ],  </span>
+<span class="s1">&quot;metadata&quot;: </span>
+<span class="s1">  { </span>
+<span class="s1">    &quot;order_id&quot;: &quot;Internal order num 13123298761&quot;</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>пример ответа Платформы:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;invoice&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">6000</span><span class="p">,</span>
+        <span class="nt">&quot;cart&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">,</span>
+                <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">,</span>
+                <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Sandwich&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;taxMode&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="s2">&quot;10%&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;InvoiceLineTaxVAT&quot;</span>
+                <span class="p">}</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+                <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+                <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Cola&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;taxMode&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="s2">&quot;18%&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;InvoiceLineTaxVAT&quot;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-06-08T13:56:31.188182Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Delicious meals&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;dueDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-06-08T14:56:31.416000Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;10vLw0XY144&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;order_id&quot;</span><span class="p">:</span> <span class="s2">&quot;Internal order num 13123298761&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Order num 12345&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shopID&quot;</span><span class="p">:</span> <span class="s2">&quot;TEST&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;unpaid&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;invoiceAccessToken&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;payload&quot;</span><span class="p">:</span> <span class="s2">&quot;{INVOICE_ACCESS_TOKEN}&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>обрабатываем в UA плательщика бизнес-процесс Apple Pay, передаем полученные данные себе на бекэнд и вызываем createPaymentResource():</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/payment-resources <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {INVOICE_ACCESS_TOKEN}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1528913559&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;paymentTool&quot;: {</span>
+<span class="s1">    &quot;paymentToolType&quot;: &quot;TokenizedCardData&quot;,</span>
+<span class="s1">    &quot;provider&quot;: &quot;ApplePay&quot;,</span>
+<span class="s1">    &quot;merchantID&quot;: &quot;merchant.money.rbk.checkout&quot;,</span>
+<span class="s1">    &quot;paymentToken&quot;: {</span>
+<span class="s1">      &quot;token&quot;: {</span>
+<span class="s1">        &quot;paymentData&quot;: {</span>
+<span class="s1">          &quot;version&quot;: &quot;EC_v1&quot;,</span>
+<span class="s1">          &quot;data&quot;: &quot;SFifeDwQPOu8Rh47AF3qplwaXmxMYU0Ewu5aw51eJ4AbCa/7MwrbbaVog9WTHvpabl7xnDuHdD+wCyzElCKIxXs1acLs2aC0rP6XSixA7I49aN7s4eMGyc7ZP3hx2dPXFto4bh5I1Pd9+hRJITp//swx+wuAjM3TF0DupLNmkA77zIAlb24JzZ3ItOcRpHQDoYnWyO1IQKvUw9EW1yB54ialI/hUxyqhRniBIAeiPERHrakSzuUjmPdpOCsgQjGHFiN80le9i6cIkvl7HD5bOvaIdb6aAdUAU/uHTLElGT3dymrjQty1OZfmYHB12H0mrTPYJLSWf390247sDsOP4c/f9VmLxcD3wnMAId8J0zSSTWv0l10cW+JgfaP3mnto0Acb/UGXPBYwkP3daQ==&quot;,</span>
+<span class="s1">          &quot;signature&quot;: &quot;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&quot;,</span>
+<span class="s1">          &quot;header&quot;: {</span>
+<span class="s1">            &quot;ephemeralPublicKey&quot;: &quot;MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEvCNyjDTYkSr9gboDq+76VvftIbAqUi4PbvJJP/e0XXRWv77MoNEmLh5pJag5ZSEpm7gTSKuTVJ8CgkFjbFpy8w==&quot;,</span>
+<span class="s1">            &quot;publicKeyHash&quot;: &quot;ZVhwTYqTzCNgV16oq5xL0rSBMGRojETt21+DdgRXzyk=&quot;,</span>
+<span class="s1">            &quot;transactionId&quot;: &quot;09e95dae77a116fa1a8fe2b049b8326ce5f9ff6f66ee8fd01289d05d19aa682e&quot;</span>
+<span class="s1">          }</span>
+<span class="s1">        },</span>
+<span class="s1">        &quot;paymentMethod&quot;: {</span>
+<span class="s1">          &quot;displayName&quot;: &quot;MasterCard 1471&quot;,</span>
+<span class="s1">          &quot;network&quot;: &quot;MasterCard&quot;,</span>
+<span class="s1">          &quot;type&quot;: &quot;debit&quot;</span>
+<span class="s1">        },</span>
+<span class="s1">        &quot;transactionIdentifier&quot;: &quot;09E95DAE77A116FA1A8FE2B049B8326CE5F9FF6F66EE8FD01289D05D19AA682E&quot;</span>
+<span class="s1">      }</span>
+<span class="s1">    }</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;clientInfo&quot;: {</span>
+<span class="s1">    &quot;fingerprint&quot;: &quot;d042b8eeada885f5bac8821d99101a09&quot;</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>пример ответа Платформы:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;clientInfo&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;d042b8eeada885f5bac8821d99101a09&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ip&quot;</span><span class="p">:</span> <span class="s2">&quot;2A04:4A00:5:1014::100D&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;paymentSession&quot;</span><span class="p">:</span> <span class="s2">&quot;eyJjbGllbnRJbmZvIjp7ImZpbmdlcnByaW50IjoiZDA0MmI4ZWVhZGE4ODVmNWJhYzg4MjFkOTkxMDFhMDkiLCJpcCI6IjJBMDQ6NEEwMDo1OjEwMTQ6OjEwMEQifSwicGF5bWVudFNlc3Npb24iOiJJYW90VGV6SUhGSFVKVkJwbFNDWHkifQ&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;paymentToolDetails&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;bin&quot;</span><span class="p">:</span> <span class="s2">&quot;520424&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;cardNumberMask&quot;</span><span class="p">:</span> <span class="s2">&quot;520424******1471&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;detailsType&quot;</span><span class="p">:</span> <span class="s2">&quot;PaymentToolDetailsBankCard&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;lastDigits&quot;</span><span class="p">:</span> <span class="s2">&quot;1471&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;paymentSystem&quot;</span><span class="p">:</span> <span class="s2">&quot;mastercard&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;tokenProvider&quot;</span><span class="p">:</span> <span class="s2">&quot;applepay&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;paymentToolToken&quot;</span><span class="p">:</span> <span class="s2">&quot;eyJiaW4iOiI1MjA0MjQiLCJtYXNrZWRfcGFuIjoiMTQ3MSIsInBheW1lbnRfc3lzdGVtIjoibWFzdGVyY2FyZCIsInRva2VuIjoiM25FN0s0ckdXVW91RzlVVjVJN2lMNyIsInRva2VuX3Byb3ZpZGVyIjoiYXBwbGVwYXkiLCJ0eXBlIjoiYmFua19jYXJkIn0&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>запускаем платеж в Платформе</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/v2/processing/invoices/10vLw0XY144/payments <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {INVOICE_ACCESS_TOKEN}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1528470852&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;flow&quot;: {</span>
+<span class="s1">    &quot;type&quot;: &quot;PaymentFlowInstant&quot;</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;payer&quot;: {</span>
+<span class="s1">      &quot;payerType&quot;: &quot;PaymentResourcePayer&quot;,</span>
+<span class="s1">    &quot;paymentToolToken&quot;:&quot;{PAYMENT_TOOL_TOKEN}&quot;,</span>
+<span class="s1">    &quot;paymentSession&quot;:&quot;{PAYMENT_SESSION}&quot;,</span>
+<span class="s1">    &quot;contactInfo&quot;:</span>
+<span class="s1">      {</span>
+<span class="s1">        &quot;email&quot;:&quot;test@test.com&quot;,</span>
+<span class="s1">        &quot;phoneNumber&quot;:&quot;9876543210&quot;</span>
+<span class="s1">      }</span>
+<span class="s1">  }</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>проверяем статус обработки платежа, обрабатываем результат.</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../googlepay/" title="Google Pay" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Ранее
+                </span>
+                Google Pay
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../examples/php-kkt-cart-webhooks/" title="PHP and Checkout" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Далее
+                </span>
+                PHP and Checkout
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+      
+        <script src="https://checkout.rbk.money/checkout.js"></script>
+      
+        <script src="/docs/payments/livedemo/livedemo.js"></script>
+      
+        <script src="/docs/lightbox/js/lightbox.min.js"></script>
+      
+    
+  </body>
+</html>

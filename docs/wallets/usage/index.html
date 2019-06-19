@@ -1,0 +1,1324 @@
+
+
+
+
+<!doctype html>
+<html lang="" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="">
+      
+        <meta name="lang:clipboard.copied" content="">
+      
+        <meta name="lang:search.language" content="">
+      
+        <meta name="lang:search.pipeline.stopwords" content="">
+      
+        <meta name="lang:search.pipeline.trimmer" content="">
+      
+        <meta name="lang:search.result.none" content="">
+      
+        <meta name="lang:search.result.one" content="">
+      
+        <meta name="lang:search.result.other" content="">
+      
+        <meta name="lang:search.tokenizer" content="">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Работа с кошельками - RBKmoney|docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/override.css">
+    
+      <link rel="stylesheet" href="/docs/lightbox/css/lightbox.min.css">
+    
+      <link rel="stylesheet" href="/docs/payments/livedemo/livedemo.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="" title="RBKmoney|docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                RBKmoney|docs
+              </span>
+              <span class="md-header-nav__topic">
+                Работа с кошельками
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/rbkmoney/docs/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    RBKmoney|docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/rbkmoney/docs/" title="Перейти к репозиторию" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Документация" class="md-nav__link">
+      Документация
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Интеграция
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Интеграция
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Payments
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Payments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/overview/" title="Обзор" class="md-nav__link">
+      Обзор
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/checkout/" title="Checkout" class="md-nav__link">
+      Checkout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/tokenizer/" title="Tokenizer" class="md-nav__link">
+      Tokenizer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/3dsecure/" title="3D-Secure" class="md-nav__link">
+      3D-Secure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/recurring/" title="Recurring" class="md-nav__link">
+      Recurring
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/postman/" title="Postman" class="md-nav__link">
+      Postman
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/googlepay/" title="Google Pay" class="md-nav__link">
+      Google Pay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/applepay/" title="Apple Pay" class="md-nav__link">
+      Apple Pay
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-9" type="checkbox" id="nav-2-1-9">
+    
+    <label class="md-nav__link" for="nav-2-1-9">
+      Примеры
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-9">
+        Примеры
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/examples/php-kkt-cart-webhooks/" title="PHP and Checkout" class="md-nav__link">
+      PHP and Checkout
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-10" type="checkbox" id="nav-2-1-10">
+    
+    <label class="md-nav__link" for="nav-2-1-10">
+      Модули CMS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-10">
+        Модули CMS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/bitrix/" title="Bitrix" class="md-nav__link">
+      Bitrix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/insales/" title="InSales" class="md-nav__link">
+      InSales
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/webasyst/" title="Webasyst/ShopScript" class="md-nav__link">
+      Webasyst/ShopScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/woocommerce/" title="Wordpress/Woocommerce" class="md-nav__link">
+      Wordpress/Woocommerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/wp-e-commerce/" title="Wordpress/E-commerce" class="md-nav__link">
+      Wordpress/E-commerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/opencart/" title="Opencart" class="md-nav__link">
+      Opencart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/netcat/" title="Netcat" class="md-nav__link">
+      Netcat
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/prestashop/" title="Prestashop" class="md-nav__link">
+      Prestashop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/ubercart/" title="Drupal/Ubercart" class="md-nav__link">
+      Drupal/Ubercart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/drupal-commerce/" title="Drupal/Commerce" class="md-nav__link">
+      Drupal/Commerce
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/magento/" title="Magento" class="md-nav__link">
+      Magento
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/cms-modules/virtuemart/" title="Joomla/Virtuemart" class="md-nav__link">
+      Joomla/Virtuemart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Wallets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Wallets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Обзор" class="md-nav__link">
+      Обзор
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Работа с кошельками
+      </label>
+    
+    <a href="./" title="Работа с кошельками" class="md-nav__link md-nav__link--active">
+      Работа с кошельками
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Оглавление</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Регистрация и получение прав" class="md-nav__link">
+    Регистрация и получение прав
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="Создание личности" class="md-nav__link">
+    Создание личности
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rbkmoney-wallet-utils" title="RBKmoney Wallet Utils" class="md-nav__link">
+    RBKmoney Wallet Utils
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="Запуск процесса идентификации" class="md-nav__link">
+    Запуск процесса идентификации
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="Привязка карты" class="md-nav__link">
+    Привязка карты
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Привязать карту" class="md-nav__link">
+    Привязать карту
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="Создать право управления привязкой" class="md-nav__link">
+    Создать право управления привязкой
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="Создание кошелька" class="md-nav__link">
+    Создание кошелька
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="Создать кошелек" class="md-nav__link">
+    Создать кошелек
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="Право управления кошельком" class="md-nav__link">
+    Право управления кошельком
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" title="Серверная часть" class="md-nav__link">
+    Серверная часть
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" title="Вывод средств на карту" class="md-nav__link">
+    Вывод средств на карту
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../card-payouts/" title="Выплаты на карты" class="md-nav__link">
+      Выплаты на карты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Справочники
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Справочники
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../payments/refs/testcards/" title="Тестовые карты" class="md-nav__link">
+      Тестовые карты
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+    
+  
+  	<li class="md-nav__item">
+		<a href="https://developer.rbk.money/api/" title="Payments API" class="md-nav__link" target="_blank">
+			Payments API
+		</a>
+	</li>
+  
+  	<li class="md-nav__item">
+		<a href="https://rbkmoney.github.io/wallets-api/v0/" title="Wallets API" class="md-nav__link" target="_blank">
+			Wallets API
+		</a>
+	</li>
+  
+  	<li class="md-nav__item">
+		<a href="https://rbkmoney.github.io/wallets-api/v0/?api/privdoc/swagger.json" title="Identity Storage API" class="md-nav__link" target="_blank">
+			Identity Storage API
+		</a>
+	</li>
+  
+
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Оглавление</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Регистрация и получение прав" class="md-nav__link">
+    Регистрация и получение прав
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="Создание личности" class="md-nav__link">
+    Создание личности
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rbkmoney-wallet-utils" title="RBKmoney Wallet Utils" class="md-nav__link">
+    RBKmoney Wallet Utils
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="Запуск процесса идентификации" class="md-nav__link">
+    Запуск процесса идентификации
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="Привязка карты" class="md-nav__link">
+    Привязка карты
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="Привязать карту" class="md-nav__link">
+    Привязать карту
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="Создать право управления привязкой" class="md-nav__link">
+    Создать право управления привязкой
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="Создание кошелька" class="md-nav__link">
+    Создание кошелька
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="Создать кошелек" class="md-nav__link">
+    Создать кошелек
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="Право управления кошельком" class="md-nav__link">
+    Право управления кошельком
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" title="Серверная часть" class="md-nav__link">
+    Серверная часть
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" title="Вывод средств на карту" class="md-nav__link">
+    Вывод средств на карту
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rbkmoney/docs/edit/master/docs/docs/wallets/usage/index.md" title="Редактировать эту страницу" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Работа с кошельками</h1>
+                
+                <p>В статье описаны основные функции кошелька <code>RBKmoney Wallet</code> для физических лиц - регистрация и авторизация в системе <code>RBKmoney Auth</code>, идентификация кошелька, привязка карты и вывод средств на нее.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Обратите внимание! Данный раздел документации описывает примеры использования возможностей <strong>пользовательских кошельков</strong>. Продукт, наиболее известный как <strong>массовые выплаты</strong>, либо выплаты на карты, либо выплаты с КЭСП, <strong>описан в разделе &ldquo;Массовые выплаты на карты&rdquo;</strong>.</p>
+</div>
+<p>Предположим, что мы оказываем услуги клиентам-плательщикам. Плательщики заводят личный счет в нашей системе и хотят выводить с этого счета деньги на свою привязанную к кошельку карту. Поскольку вывод средств осуществляется с кошелька физического лица, мы должны получить право на управления ресурсами этого кошелька.</p>
+<p>Мы только что начали использование сервисов RBKmoney и не имеем никаких кошельков, клиентов и карт, но хотим провести первую выплату. Для этого нужно произвести техническую интеграцию. </p>
+<h2 id="_1">Регистрация и получение прав<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script src="usage.js"></script>
+
+<p><link rel="stylesheet" href="usage.css"></p>
+<p>Право на управление кошельком от имени пользователя нужно запросить у него явным образом. Данная возможность реализована в виде стандартного <a href="https://en.wikipedia.org/wiki/OAuth#OAuth_2.0">OAuth2 Flow</a> по протоколу <a href="https://en.wikipedia.org/wiki/OpenID_Connect">OpenID Connect</a>. Протокол подразумевает обязательное взаимодействие с плательщиком через браузер. </p>
+<p>Плательщик должен иметь учетную запись в <code>RBKmoney Auth</code> и предоставить право на управление ресурсами принадлежащего ему кошелька вам. Фактически, это означает, что нам нужно запросить и получить в ответ <a href="https://jwt.io/">JSON Web Token</a>, который использовать в виде ключа авторизации в <code>RBKmoney API</code> для того, чтобы выполнять запросы от имени нашего клиента.</p>
+<p>Мы предоставляем библиотеку, реализующую большинство функций и позволяющую получить токен. Для подключения библиотеки достаточно включить ее в код вашей страницы: </p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://auth.rbk.money/auth/js/keycloak.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<script src="https://auth.rbk.money/auth/js/keycloak.js"></script>
+
+<ul>
+<li>создать файл конфигурации и разместить его на своем сервисе, например под именем <code>keycloak.json</code>:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;realm&quot;</span><span class="p">:</span> <span class="s2">&quot;external&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;auth-server-url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://auth.rbk.money/auth&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ssl-required&quot;</span><span class="p">:</span> <span class="s2">&quot;none&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;resource&quot;</span><span class="p">:</span> <span class="s2">&quot;test-dummy&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;public-client&quot;</span><span class="p">:</span> <span class="kc">true</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>вызвать метод инициализации библиотеки авторизации и функцию <code>login()</code>:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="kr">const</span> <span class="nx">auth</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Keycloak</span><span class="p">(</span><span class="s1">&#39;keycloak.json&#39;</span><span class="p">);</span>
+<span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">auth</span><span class="p">.</span><span class="nx">init</span><span class="p">().</span><span class="nx">success</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">resolve</span><span class="p">();</span>
+    <span class="p">}).</span><span class="nx">error</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">reject</span><span class="p">();</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="nx">auth</span><span class="p">.</span><span class="nx">login</span><span class="p">();</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Внимание!
+OpenID Connect подразумевает предварительную регистрацию клиента на стороне RBKmoney и указание Redirect URL ваших сайтов, на которые будет разрешен возврат клиентов после авторизации в <code>RBKmoney Auth</code>. После регистрации вам будет выдан файл <code>keycloak.json</code> с боевыми настройками. Для получения боевого доступа <a href="mailto:support@rbk.money">обратитесь</a> к нам.</p>
+<p>Для тестовой среды используйте клиента <code>test-dummy</code> из примера выше.</p>
+<p>Валидные адреса для переадресации клиента: <strong><code>http://localhost:8000/*</code></strong>, <strong><code>http://127.0.0.1:8000/*</code></strong>. Настройте свой веб-сервер на эти адреса в вашей тестовой среде.</p>
+</div>
+<p>Теперь мы можем разместить у себя в личном кабинете кнопку, при нажатии на которую наш клиент сможет зарегистрировать или авторизовать свою учетную запись в <code>RBKmoney Auth</code>.</p>
+<p>Эта документация интерактивная. Нажмите на кнопку и зарегистрируйтесь, или авторизуйтесь в сервисе, для получения полного объема информации, предоставляемого в статье. Большинство функций записывают свои действия в консоли браузера, вы можете использовать их для отладки.</p>
+<p><button id="login-user-button" class="wallet-utils-button">Войти в RBKmoney</button></p>
+<p>После успешной авторизации мы получили JWT, который позволит нам выполнить все необходимые действия в <code>Wallet API</code> от имени пользователя.</p>
+<h2 id="_2">Создание личности<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Теперь, когда мы имеем права <a href="/docs/wallets/overview/#_2">пользователя</a>, мы можем создать ему <a href="/docs/wallets/overview/#_3">личность</a> и запустить процесс идентификации.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Обратите внимание! JWT, которые вы получаете через Oauth2 Flow, имеют очень короткое время жизни - минуты. Это сделано для безопасности. Нецелесообразно передавать клиентский JWT себе на бекэнд для работы с <code>Wallets API</code>. Мы рекомендуем все действия - создание личности, кошелька и получение прав на управление и вывод создавать на фронтенде, после чего передавать токены прав себе на бекэнд и использовать их для создания выплат. Срок жизни прав управления вы устанавливаете сами.</p>
+</div>
+<p><button id="create-identity-button" class="wallet-utils-button">Создать личность</button></p>
+<ul>
+<li>в ответ нам возвращается структура, подобная:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;person&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-08-06T11:48:01.183346Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;isBlocked&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="s2">&quot;anonymous&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;lkDisplayName&quot;</span><span class="p">:</span> <span class="s2">&quot;Иванов Иван Иванович&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;test test&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;provider&quot;</span><span class="p">:</span> <span class="s2">&quot;test&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>В дальнейшем нам для создания метода вывода и кошелька понадобится идентификатор созданной личности, запомним его.</p>
+<p>Пример функции создания личности может выглядеть так:</p>
+<div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">createIdentity</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">walletProviderId</span> <span class="o">=</span> <span class="s1">&#39;test&#39;</span><span class="p">;</span>
+    <span class="kr">const</span> <span class="p">{</span><span class="nx">token</span><span class="p">,</span> <span class="nx">profileName</span><span class="p">}</span> <span class="o">=</span> <span class="nx">AuthService</span><span class="p">.</span><span class="nx">getAccountInfo</span><span class="p">();</span>
+    <span class="kr">const</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="nx">profileName</span><span class="p">,</span>
+        <span class="nx">provider</span><span class="o">:</span> <span class="nx">walletProviderId</span><span class="p">,</span>
+        <span class="kr">class</span><span class="o">:</span> <span class="s1">&#39;person&#39;</span><span class="p">,</span>
+        <span class="nx">metadata</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">lkDisplayName</span><span class="o">:</span> <span class="s1">&#39;Иванов Иван Иванович&#39;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+    <span class="k">return</span> <span class="nx">post</span><span class="p">(</span><span class="s1">&#39;https://api.rbk.money/wallet/v0/identities&#39;</span><span class="p">,</span> <span class="nx">token</span><span class="p">,</span> <span class="nx">params</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="rbkmoney-wallet-utils">RBKmoney Wallet Utils<a class="headerlink" href="#rbkmoney-wallet-utils" title="Permanent link">&para;</a></h2>
+<p>Для решения проблем, связанных с соответствием требований законов о хранении и обработке карточных и персональных данных мы предоставляем JS-библиотеку, реализующую пользовательский интерфейсы ввода паспортных и карточных данных.</p>
+<p>Для подключения библиотеки включаем ее в код нашей страницы:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://wallet.rbk.money/wallet-utils.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<script src="https://wallet.rbk.money/wallet-utils.js"></script>
+
+<h2 id="_3">Запуск процесса идентификации<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Для запуска непосредственно процесса идентификации нам достаточно вызвать функцию <code>startIdentityChallenge()</code> из <code>Wallet Utils</code> и передать в нее полученный при создании идентификатор личности:</p>
+<div class="codehilite"><pre><span></span><span class="nx">walletUtils</span><span class="p">.</span><span class="nx">startIdentityChallenge</span><span class="p">({</span>
+    <span class="nx">identityID</span><span class="o">:</span> <span class="s1">&#39;&lt;string&gt;&#39;</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>Нажмите на кнопку и введите тестовые данные.</p>
+<p><button id="create-identity-challenge-button" class="wallet-utils-button">Запустить идентификацию</button></p>
+<p>Библиотека самостоятельно завершит процесс идентификации и вернет события успеха или ошибки, которые вы можете обработать:</p>
+<div class="codehilite"><pre><span></span><span class="nx">walletUtils</span><span class="p">.</span><span class="nx">onCompleteIdentityChallenge</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// handle user complete identity challenge</span>
+<span class="p">};</span>
+
+<span class="nx">walletUtils</span><span class="p">.</span><span class="nx">onFailIdentityChallenge</span> <span class="o">=</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// handle user failed identity challenge</span>
+<span class="p">};</span>
+</pre></div>
+
+
+<h2 id="_4">Привязка карты<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Теперь, когда у нас создана личность и опционально пройдена идентификация, мы можем привязать к личности карту. Для этого необходимо вызвать функцию <code>createDestination()</code> из <code>Wallet Utils</code> и передать в нее идентификатор личности и название карты для вывода:</p>
+<div class="codehilite"><pre><span></span><span class="nx">walletUtils</span><span class="p">.</span><span class="nx">createDestination</span><span class="p">({</span>
+    <span class="nx">identityID</span><span class="o">:</span> <span class="nx">identityID</span><span class="p">,</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Visa 4242 42** **** **** 4242&quot;</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<h3 id="_5">Привязать карту<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>Теперь мы можем создать обработчик, который при нажатии на кнопку запрашивает карточные данные, привязывает их к личности и создает <a href="/docs/wallets/overview/#_8">метод вывода средств</a>.</p>
+<p><button id="create-payout-button" class="wallet-utils-button">Привязать карту</button></p>
+<h3 id="_6">Создать право управления привязкой<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>После создания метода вывода нам нужно получить <a href="/docs/wallets/overview/#_10">право управления методом вывода</a>, или <code>destination grant</code>.</p>
+<p><button id="create-destination-grant-button" class="wallet-utils-button">Создать право управления методом вывода</button></p>
+<ul>
+<li>в ответ нам возвращается структура, подобная:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;eyJtZXRhZGF0YSI6e30sInJlc291cmNlSUQiOiIxIiwicmVzb3VyY2VUeXBlIjoiZGVzdGluYXRpb25zIiwidmFsaWRVbnRpbCI6IjIwMTktMDctMDdUMTE6MDQ6MDlaIn0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validUntil&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-07-07T11:04:09Z&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Пока запомним ее, мы к ней вернемся, и перейдем к созданию кошелька и получению права управления им.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Скрипт, встроенный в документацию также логгирует данные в консоль браузера, вы можете просмотреть структуру ответа для вашей учетной записи.</p>
+</div>
+<p>Пример функции создания прав на метод вывода может выглядеть так:</p>
+<div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">createDestinationGrant</span><span class="p">(</span><span class="nx">destinationID</span><span class="p">,</span> <span class="nx">validUntil</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="p">{</span><span class="nx">token</span><span class="p">}</span> <span class="o">=</span> <span class="nx">AuthService</span><span class="p">.</span><span class="nx">getAccountInfo</span><span class="p">();</span>
+    <span class="kr">const</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nx">validUntil</span><span class="o">:</span> <span class="nx">validUntil</span>
+    <span class="p">};</span>
+    <span class="k">return</span> <span class="nx">post</span><span class="p">(</span><span class="sb">`https://api.rbk.money/wallet/v0/destinations/</span><span class="si">${</span><span class="nx">destinationID</span><span class="si">}</span><span class="sb">/grants`</span><span class="p">,</span> <span class="nx">token</span><span class="p">,</span> <span class="nx">params</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="_7">Создание кошелька<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>Теперь у нас достаточно данных для того, чтобы создать кошелек, получить право на <a href="/docs/wallets/overview/#_7">управление кошельком</a> и передать данные себе на бекэнд, где запустить процесс <a href="/docs/wallets/overview/#_11">выплаты на карту</a>.</p>
+<h3 id="_8">Создать кошелек<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p><button id="create-wallet-button" class="wallet-utils-button">Создать кошелек</button></p>
+<ul>
+<li>в ответ нам возвращается структура о созданном кошельке:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-07-30T13:17:18.111543Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;identity&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;isBlocked&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;client_locale&quot;</span><span class="p">:</span> <span class="s2">&quot;RU_ru&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Friendly name&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Пример функции создания кошелька может выглядеть так:</p>
+<div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">createWallet</span><span class="p">(</span><span class="nx">identityID</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="p">{</span><span class="nx">token</span><span class="p">}</span> <span class="o">=</span> <span class="nx">AuthService</span><span class="p">.</span><span class="nx">getAccountInfo</span><span class="p">();</span>
+    <span class="kr">const</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Default wallet&#39;</span><span class="p">,</span>
+        <span class="nx">identity</span><span class="o">:</span> <span class="nx">identityID</span><span class="p">,</span>
+        <span class="nx">currency</span><span class="o">:</span> <span class="s1">&#39;RUB&#39;</span><span class="p">,</span>
+        <span class="nx">metadata</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">client_locale</span><span class="o">:</span> <span class="s1">&#39;RU_ru&#39;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+    <span class="k">return</span> <span class="nx">post</span><span class="p">(</span><span class="s1">&#39;https://api.rbk.money/wallet/v0/wallets&#39;</span><span class="p">,</span> <span class="nx">token</span><span class="p">,</span> <span class="nx">params</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>в дальнейшем нам понадобится его идентификатор.</p>
+<h3 id="_9">Право управления кошельком<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>создаем право на управление кошельком:</li>
+</ul>
+<p><button id="create-wallet-grant-button" class="wallet-utils-button">Создать право управления кошельком</button></p>
+<ul>
+<li>в ответ нам возвращается структура, подобная:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;asset&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">10000</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;RUB&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;eyJtZXRhZGF0YSI6eyJhc3NldCI6eyJhbW91bnQiOjEwMDAwLCJjdXJyZW5jeSI6IlJVQiJ9fSwicmVzb3VyY2VJRCI6IjMiLCJyZXNvdXJjZVR5cGUiOiJ3YWxsZXRzIiwidmFsaWRVbnRpbCI6IjIwMTktMDctMDdUMTE6MDQ6MDlaIn0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;validUntil&quot;</span><span class="p">:</span> <span class="s2">&quot;2019-07-07T11:04:09Z&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="_10">Серверная часть<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>На этом браузерную часть можно считать завершенной. Пример реализации, обеспечивающего работу интерактивных кнопок вы можете посмотреть в исходном коде скрипта <a href="usage.js">usage.js</a>.</p>
+<p>Любым удобным способом передаем себе на бекэнд:</p>
+<ul>
+<li><code>destinationID</code>, или идентификатор метода вывода средств;<ul>
+<li><code>destination grant</code>, или структуру права управления методом вывода;</li>
+</ul>
+</li>
+<li><code>walletID</code>, или идентификатор кошелька;<ul>
+<li><code>wallet grant</code>, или структуру права управления кошельком.</li>
+</ul>
+</li>
+</ul>
+<h2 id="_11">Вывод средств на карту<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p>У нас достаточно данных для того, чтобы запустить процесс вывода денег на карту. Вызываем метод <code>createWithdrawal()</code>:</p>
+<div class="codehilite"><pre><span></span>curl -X POST <span class="se">\</span>
+  https://api.rbk.money/wallet/v0/withdrawals <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {JWT}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json; charset=utf-8&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1533232823&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;{</span>
+<span class="s1">  &quot;wallet&quot;: &quot;{WALLET_ID}&quot;,</span>
+<span class="s1">  &quot;destination&quot;: &quot;{DESTINATION_ID}&quot;,</span>
+<span class="s1">  &quot;body&quot;: {</span>
+<span class="s1">      &quot;amount&quot;: 1430000,</span>
+<span class="s1">      &quot;currency&quot;: &quot;RUB&quot;</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;metadata&quot;: {</span>
+<span class="s1">      &quot;notify_email&quot;: &quot;iliketrains@example.com&quot;</span>
+<span class="s1">  },</span>
+<span class="s1">  &quot;walletGrant&quot;: &quot;{WALLET_GRANT}&quot;,</span>
+<span class="s1">  &quot;destinationGrant&quot;: &quot;{DESTINATION_GRANT}&quot;</span>
+<span class="s1">}&#39;</span>
+</pre></div>
+
+
+<ul>
+<li>выплата запущена. Получить ее состояние можно вызвав</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -X GET <span class="se">\</span>
+  https://api.rbk.money/wallet/v0/withdrawals/<span class="o">{</span>WITHDRAWAL_ID<span class="o">}</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Authorization: Bearer {JWT}&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Cache-Control: no-cache&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: 1533233124&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;X-Request-ID: 1533233124&#39;</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../overview/" title="Обзор" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Ранее
+                </span>
+                Обзор
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../card-payouts/" title="Выплаты на карты" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Далее
+                </span>
+                Выплаты на карты
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+      
+        <script src="https://checkout.rbk.money/checkout.js"></script>
+      
+        <script src="/docs/payments/livedemo/livedemo.js"></script>
+      
+        <script src="/docs/lightbox/js/lightbox.min.js"></script>
+      
+    
+  </body>
+</html>
